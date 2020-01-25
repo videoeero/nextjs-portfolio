@@ -1,0 +1,17 @@
+.button {
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  margin: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0px 2px 5px rgba(8, 5, 5, 0.3);
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+
+  &:hover {
+    background-color: $color-gray;
+    transform: scale(1.05);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+  }
+}

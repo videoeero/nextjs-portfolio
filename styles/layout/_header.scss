@@ -1,0 +1,11 @@
+.header {
+  @extend .flex, .flex__column;
+  min-height: 40vh;
+
+  &__buttons {
+    @extend .flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: lightblue;
+  }
+}

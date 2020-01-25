@@ -1,0 +1,30 @@
+{
+  "name": "nextjs-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website with NextJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/videoeero/nextjs-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/videoeero/nextjs-portfolio/issues"
+  },
+  "homepage": "https://github.com/videoeero/nextjs-portfolio#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^9.2.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sass": "^1.25.1-test.1"
+  }
+}
