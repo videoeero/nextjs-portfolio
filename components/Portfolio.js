@@ -12,8 +12,6 @@ const Skills = props => {
       );
     });
 
-  const { projects } = props;
-  console.log(projects);
   return (
     <>
       <section id='#portfolio' className='about'>

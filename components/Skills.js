@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import uuid from 'react-uuid';
 
 const Skills = props => {
   const showSkills = () =>
     props.skills.map((skill, index) => {
       return (
-        <div className='skills__item'>
+        <div key={uuid()} className='skills__item'>
           <p className='skills__title'>{skill.title}</p>
           <div className='skills__bar'>
             <div

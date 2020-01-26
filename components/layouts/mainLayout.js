@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../includes/Navigation';
+import Header from '../Header';
 import Head from 'next/head';
 // import '../../styles/main.scss';
 
@@ -23,6 +24,7 @@ const MainLayout = props => (
     </Head>
     <div className='mainLayout_container'>
       <Navigation />
+      <Header />
       {props.children}
     </div>
   </>

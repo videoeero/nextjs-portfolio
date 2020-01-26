@@ -26,7 +26,6 @@ section {
 .skills {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
 
   &__item {
     display: flex;
@@ -55,5 +54,42 @@ section {
   &__level {
     margin-left: 1rem;
     width: 5rem;
+  }
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    @extend .flex;
+    justify-content: flex-start;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__year {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  &__item {
+    width: 70rem;
+    max-width: 90vw;
+
+    .heading {
+      text-align: left;
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+
+    .paragraph {
+      // width: 40rem;
+    }
   }
 }
