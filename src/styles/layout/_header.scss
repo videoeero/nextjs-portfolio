@@ -1,6 +1,7 @@
 .header {
   @extend .flex, .flex__column;
   min-height: 40vh;
+  background-color: lightblue;
 
   &__buttons {
     @extend .flex;

@@ -6,15 +6,9 @@ h4,
   max-width: 90%;
 }
 
-h1 {
-  background-color: red;
-}
-
 .heading {
   text-transform: uppercase;
   text-align: center;
-  // font-family: Orbitron, 'sans-serif';
-  // color: $color-speksi-3;
   display: inline-block;
   max-width: 90%;
 
@@ -22,8 +16,6 @@ h1 {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 4px;
-    margin-top: 6rem;
-    // color: $color-speksi-2;
     @include respond(tab-port) {
       font-size: 5rem;
     }

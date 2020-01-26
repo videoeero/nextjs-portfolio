@@ -20,7 +20,6 @@ const MainLayout = props => (
         property='og:description'
         content='Portfolio / CV of Eero Suvanto, Web & Edutech Developer'
       />
-      <link rel='stylesheet' href='/css/styles.css'></link>
     </Head>
     <div className='mainLayout_container'>
       <Navigation />

@@ -5,28 +5,23 @@ const Navigation = () => {
   return (
     <>
       <nav className='nav'>
-        <ul className='nav__list'>
-          <li className='nav__list__item'>
-            <Link href='/#landing'>
-              <a>Eero</a>
-            </Link>
-          </li>
-          <li className='nav__list__item'>
-            <Link href='/#about'>
-              <a>About me</a>
-            </Link>
-          </li>
-          <li className='nav__list__item'>
-            <Link href='/#skills'>
-              <a>Skills & Experience</a>
-            </Link>
-          </li>
-          <li className='nav__list__item'>
-            <Link href='/#portfolio'>
-              <a>Portfolio</a>
-            </Link>
-          </li>
-        </ul>
+        <div className='nav__list'>
+          <Link href='/#landing'>
+            <a className='nav__list__item'>Home</a>
+          </Link>
+          <Link href='/#about'>
+            <a className='nav__list__item'>About me</a>
+          </Link>
+          <Link href='/#skills'>
+            <a className='nav__list__item'>Skills & Experience</a>
+          </Link>
+          <Link href='/#portfolio'>
+            <a className='nav__list__item'>Portfolio</a>
+          </Link>
+          <Link href='/#contact'>
+            <a className='nav__list__item'>Contact</a>
+          </Link>
+        </div>
       </nav>
     </>
   );

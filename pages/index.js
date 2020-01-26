@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
-import Header from '../components/includes/Header';
-import '../styles/main.scss';
+import Header from '../components/Header';
+import About from '../components/About';
+import Skills from '../components/Skills';
+import Portfolio from '../components/Portfolio';
+import portfolioData from '../src/data/portfolioData';
+import '../src/styles/main.scss';
 
 class Home extends Component {
   static async getInitialProps() {
-    let portfolioData;
+    const portfolio = portfolioData;
 
-    return {
-      portfolioData
-    };
+    return { portfolio: portfolio };
   }
 
   render() {
-    const { portfolioData } = this.props;
-    console.log(portfolioData);
+    const { portfolio } = this.props;
     return (
       <>
         <Header />
-        <div>Kotisivuuu</div>
+        <About />
+        <Skills />
+        <Portfolio projects={portfolio} />
       </>
     );
   }

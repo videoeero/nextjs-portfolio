@@ -1,0 +1,14 @@
+.nav {
+  @extend .flex;
+  width: 100vw;
+  background-color: rgba($color-black, 0.7);
+  height: 4rem;
+
+  &__list {
+    font-size: $default-font-size;
+    &__item {
+      padding: 1rem;
+      color: $color-light !important;
+    }
+  }
+}
