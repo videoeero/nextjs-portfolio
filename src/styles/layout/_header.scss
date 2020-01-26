@@ -1,12 +1,50 @@
 .header {
-  @extend .flex, .flex__column;
+  @extend .flex;
   min-height: 40vh;
-  background-color: lightblue;
+  background-color: $color-light;
+  width: 100vw;
+  justify-content: flex-end;
+
+  &__wrapper {
+    margin-right: 3rem;
+  }
 
   &__buttons {
     @extend .flex;
     flex-wrap: wrap;
     width: 100vw;
-    background-color: lightblue;
+  }
+
+  &__titles {
+    @extend .heading, .heading__h1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 6rem;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      height: 4.6rem;
+    }
+    @include respond(phone) {
+      height: 3rem;
+    }
+
+    &__cont {
+      // background-color: lightcyan;
+    }
+  }
+
+  &__title {
+    line-height: 6rem;
+    display: block;
+    text-align: left;
+    color: $color-plum;
+    @include respond(tab-port) {
+      line-height: 4.6rem;
+    }
+    @include respond(phone) {
+      line-height: 3rem;
+    }
   }
 }

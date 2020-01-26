@@ -12,3 +12,54 @@
     opacity: 1;
   }
 }
+
+.rollTitles {
+  animation: rollTitles 10s ease-in-out 0s infinite;
+}
+
+.skills__animate {
+  width: 0;
+  animation: showSkills 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes rollTitles {
+  0% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(0);
+  }
+
+  22% {
+    transform: translateY(-25%);
+  }
+  37% {
+    transform: translateY(-25%);
+  }
+  44% {
+    transform: translateY(-50%);
+  }
+
+  59% {
+    transform: translateY(-50%);
+  }
+
+  66% {
+    transform: translateY(-75%);
+  }
+
+  100% {
+    transform: translateY(-75%);
+  }
+}
+
+@keyframes showSkills {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
