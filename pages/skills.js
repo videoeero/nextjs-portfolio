@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import uuid from 'react-uuid';
 import skills from '../src/data/skillsData';
-import works from '../src/data/workData';
-import exps from '../src/data/expData';
+import workData from '../src/data/workData';
+import eduData from '../src/data/educationData';
 import expData from '../src/data/expData';
 
 class skillsPage extends Component {
@@ -26,43 +26,53 @@ class skillsPage extends Component {
                 </div>
               </div>
             </div>
-            <p className='skills__level'>{skill.level}0 %</p>
+            <p className='skills__level'>{skill.level}0%</p>
           </div>
         );
       });
 
-    const showWorks = array =>
+    const showExperience = array =>
       array.map((work, index) => {
-        const { year, employer, title, description } = work;
+        const { year, employer, title, description, shortDesc } = work;
 
         return (
-          <div key={uuid()} className='works__item'>
-            <div className='works__title'>
-              <p className='works__year'>{year}</p>
-              <h3 className='heading heading__h3'>
-                {employer} / {title}
-              </h3>
-            </div>
+          <div key={uuid()} className='exp__item'>
+            <p className='exp__year'>{year}</p>
+            <h3 className='heading heading__h3'>
+              {employer} / {title}
+            </h3>
 
-            <p className='paragraph'>{description}</p>
+            {shortDesc ? (
+              <p className='paragraph paragraph__centered'>{description}</p>
+            ) : (
+              <p className='paragraph'>{description}</p>
+            )}
           </div>
         );
       });
 
     return (
       <>
-        <section id='#skills'>
-          <h2 className='heading heading__h2'>Skills</h2>
-          <div className='skills'>{showSkills()}</div>
-        </section>
-        <section>
-          <h2 className='heading heading__h2'>Work Experience</h2>
-          <div className='works'>{showWorks(works)}</div>
-        </section>
-        <section>
-          <h2 className='heading heading__h2'>Other Experience</h2>
-          <div className='works'>{showWorks(expData)}</div>
-        </section>
+        <div className='exp__main'>
+          <section className='exp__section' id='#skills'>
+            <h2 className='heading heading__h2'>Skills</h2>
+            <div className='skills'>{showSkills()}</div>
+          </section>
+          <section className='exp__section'>
+            <h2 className='heading heading__h2'>Education</h2>
+            <div className='exp'>{showExperience(eduData)}</div>
+          </section>
+          <section className='exp__section'>
+            <h2 className='heading heading__h2'>Work Experience</h2>
+            <div className='exp'>{showExperience(workData)}</div>
+          </section>
+          <section className='exp__section'>
+            <h2 className='heading heading__h2'>
+              Other Experience & Achievements
+            </h2>
+            <div className='exp'>{showExperience(expData)}</div>
+          </section>
+        </div>
       </>
     );
   }

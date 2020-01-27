@@ -8,10 +8,7 @@ class Navigation extends Component {
         <nav className='nav'>
           <div className='nav__list'>
             <Link href='/'>
-              <a className='nav__list__item'>Home</a>
-            </Link>
-            <Link href='/about'>
-              <a className='nav__list__item'>About me</a>
+              <a className='nav__list__item'>Who am I?</a>
             </Link>
             <Link href='/skills'>
               <a className='nav__list__item'>Skills & Experience</a>

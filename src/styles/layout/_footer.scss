@@ -1,0 +1,36 @@
+footer {
+  padding: 3rem;
+  background-color: $color-gunmetal;
+  background-image: linear-gradient(
+    to right,
+    $color-dark,
+    $color-gunmetal,
+    $color-dark
+  );
+
+  & p {
+    color: $color-gray;
+    font-size: $default-font-size;
+    margin: 2rem 0;
+  }
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    & path {
+      fill: $color-gray;
+    }
+  }
+
+  & path {
+    fill: $color-light;
+    transition: all 0.3s;
+  }
+}

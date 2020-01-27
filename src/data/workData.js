@@ -4,13 +4,14 @@ export default [
     employer: 'Eduten Oy',
     title: 'Consultant',
     description:
-      'Designing and producting company website, videos and other media. Training teachers to use virtual learning platform and analytics to enhance their teaching.'
+      'Designing and producing company website, videos and other media. Training teachers to use learning analytics based learning platform to enhance their teaching.'
   },
   {
     year: '2017 -',
     employer: 'Freelancer',
     title: 'Web Developer',
-    description: 'Creating websites and various IT solutions for clients.'
+    description: 'Creating websites and various IT solutions for clients.',
+    shortDesc: true
   },
   {
     year: '2016 -',
@@ -24,6 +25,6 @@ export default [
     employer: 'Freelancer',
     title: 'Media producer',
     description:
-      'Designing, producing and editing various video projects: Commercial, music videos, short films, event recording. Also graphical designs like posters and graphical assets for events or organizations.'
+      'Designing, producing and editing various video projects: Commercials, music videos, short films, event recordings. Also graphical designs for example posters and graphical assets for events or organizations.'
   }
 ];

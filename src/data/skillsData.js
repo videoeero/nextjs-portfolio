@@ -3,7 +3,7 @@ export default [
   { title: 'ReactJS', level: 8 },
   { title: 'Typescript', level: 6 },
   { title: 'NodeJS', level: 7 },
-  { title: 'Databases: MongoDB, PostgreSQL', level: 6 },
+  { title: 'MongoDB, PostgreSQL', level: 6 },
   { title: 'Git', level: 7 },
   { title: 'Adobe CC', level: 8 },
   { title: 'UI / UX design', level: 8 },

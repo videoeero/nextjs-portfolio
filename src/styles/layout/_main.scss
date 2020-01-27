@@ -26,6 +26,7 @@ section {
 .skills {
   display: flex;
   flex-direction: column;
+  max-width: 95vw;
 
   &__item {
     display: flex;
@@ -36,8 +37,12 @@ section {
 
   &__title {
     text-align: right;
-    width: 30rem;
+    width: 25rem;
     margin-right: 1rem;
+    @include respond(phone) {
+      width: 15rem;
+      margin-right: 1rem;
+    }
   }
 
   &__bar {
@@ -45,8 +50,16 @@ section {
     width: 30rem;
     transition: all 0.3s;
 
+    @include respond(tab-port) {
+      width: 25rem;
+    }
+
+    @include respond(phone) {
+      width: 20rem;
+    }
+
     &__inner {
-      background-color: $color-green;
+      background-color: $color-imperial;
       transition: all 0.3s;
     }
   }
@@ -57,39 +70,44 @@ section {
   }
 }
 
-.works {
+.exp {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  &__section {
+    width: 60rem;
+    max-width: 95vw;
+  }
+
   &__title {
-    @extend .flex;
-    justify-content: flex-start;
-    @include respond(tab-port) {
-      flex-direction: column;
-    }
+    @extend .flex, .flex__column;
+    width: 100%;
   }
 
   &__year {
+    margin-bottom: 2rem;
     font-style: italic;
     font-weight: 400;
     font-size: 2rem;
-    margin-right: 1rem;
   }
 
   &__item {
-    width: 70rem;
+    @extend .flex, .flex__column;
+    width: 55rem;
     max-width: 90vw;
-
-    .heading {
-      text-align: left;
-      @include respond(tab-port) {
-        text-align: center;
-      }
-    }
+    margin-bottom: 3rem;
 
     .paragraph {
-      // width: 40rem;
+      width: 55rem;
     }
   }
 }

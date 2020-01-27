@@ -1,8 +1,19 @@
 .nav {
   @extend .flex;
+  z-index: 10;
   width: 100vw;
-  background-color: rgba($color-black, 0.7);
+  // background-color: rgba($color-black, 0.7);
   height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // background-color: $color-gunmetal;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-dark, 0.85),
+    rgba($color-gunmetal, 0.85),
+    rgba($color-dark, 0.85)
+  ) !important;
 
   &__list {
     font-size: $default-font-size;

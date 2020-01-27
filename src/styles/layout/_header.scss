@@ -1,12 +1,25 @@
 .header {
   @extend .flex;
   min-height: 40vh;
-  background-color: $color-light;
+  background-color: $color-gunmetal;
+  background-image: linear-gradient(
+    to right,
+    $color-dark,
+    $color-gunmetal,
+    $color-dark
+  );
   width: 100vw;
-  justify-content: flex-end;
+
+  &__image {
+    width: 30rem;
+    margin-right: 2rem;
+  }
 
   &__wrapper {
-    margin-right: 3rem;
+    @extend .flex;
+
+    &__headings {
+    }
   }
 
   &__buttons {
@@ -18,7 +31,7 @@
   &__titles {
     @extend .heading, .heading__h1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     height: 6rem;
     overflow: hidden;
@@ -28,10 +41,6 @@
     }
     @include respond(phone) {
       height: 3rem;
-    }
-
-    &__cont {
-      // background-color: lightcyan;
     }
   }
 

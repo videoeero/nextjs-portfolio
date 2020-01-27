@@ -16,7 +16,6 @@ li {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
-  max-width: 90%;
 
   &__name {
     color: $color-plum;
@@ -28,6 +27,7 @@ li {
     letter-spacing: 4px;
     text-align: left;
     white-space: nowrap;
+    color: $color-lavender;
 
     @include respond(tab-port) {
       font-size: 4rem;
@@ -38,21 +38,23 @@ li {
   }
 
   &__h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 2px;
+    margin-bottom: 2rem;
     @include respond(tab-port) {
-      font-size: 3.2rem;
+      font-size: 2.7rem;
     }
     @include respond(phone) {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
 
-    &::after {
+    &::after,
+    &::before {
       content: '';
       display: block;
       margin: 1rem auto;
       height: 3px;
-      background-color: red;
+      background-color: $color-plum;
       width: 100%;
     }
   }
@@ -75,6 +77,15 @@ li {
     font-style: italic;
     font-weight: 300;
     text-align: center;
+  }
+
+  &__centered {
+    text-align: center;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: $color-plum !important;
   }
 
   @include respond(tab-port) {
