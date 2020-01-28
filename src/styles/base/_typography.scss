@@ -27,7 +27,7 @@ li {
     letter-spacing: 4px;
     text-align: left;
     white-space: nowrap;
-    color: $color-lavender;
+    color: $color-platinum;
 
     @include respond(tab-port) {
       font-size: 4rem;
@@ -56,6 +56,13 @@ li {
       height: 3px;
       background-color: $color-plum;
       width: 100%;
+    }
+
+    &__blue {
+      &::after,
+      &::before {
+        background-color: $color-blue;
+      }
     }
   }
 

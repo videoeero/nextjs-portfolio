@@ -1,42 +1,54 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 import uuid from 'react-uuid';
+import Skill from '../components/Skill';
 import skills from '../src/data/skillsData';
 import workData from '../src/data/workData';
 import eduData from '../src/data/educationData';
 import expData from '../src/data/expData';
 
 class skillsPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      activeStatus: skills.map(el => false)
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(index) {
+    const skillStatus = [...this.state.activeStatus];
+    skillStatus.map((el, i) => {
+      if (i != index) {
+        skillStatus[i] = false;
+      }
+    });
+    skillStatus[index] = !this.state.activeStatus[index];
+    this.setState({ activeStatus: skillStatus });
+  }
+
   render() {
-    const showSkills = () =>
-      skills.map((skill, index) => {
-        return (
-          <div key={uuid()} className='skills__item'>
-            <p className='skills__title'>{skill.title}</p>
-            <div className='skills__bar'>
-              <div
-                className='skills__animate'
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div
-                  className='skills__bar__inner'
-                  style={{ width: `${skill.level * 10}%` }}
-                >
-                  &nbsp;
-                </div>
-              </div>
-            </div>
-            <p className='skills__level'>{skill.level}0%</p>
-          </div>
-        );
-      });
+    const skillList = skills.map((skill, index) => {
+      return (
+        <>
+          <Skill
+            key={uuid}
+            handleClick={this.handleClick}
+            index={index}
+            skill={skill}
+            active={this.state.activeStatus[index]}
+          />
+        </>
+      );
+    });
 
     const showExperience = array =>
       array.map((work, index) => {
         const { year, employer, title, description, shortDesc } = work;
 
         return (
-          <div key={uuid()} className='exp__item'>
+          <div className='exp__item'>
             <p className='exp__year'>{year}</p>
             <h3 className='heading heading__h3'>
               {employer} / {title}
@@ -55,15 +67,18 @@ class skillsPage extends Component {
       <>
         <div className='exp__main'>
           <section className='exp__section' id='#skills'>
-            <h2 className='heading heading__h2'>Skills</h2>
-            <div className='skills'>{showSkills()}</div>
+            <h2 className='heading heading__h2 heading__h2__blue'>Skills</h2>
+            {/* <div className='skills'>{showSkills()}</div> */}
+            <div className='skills'>{skillList}</div>
           </section>
           <section className='exp__section'>
             <h2 className='heading heading__h2'>Education</h2>
             <div className='exp'>{showExperience(eduData)}</div>
           </section>
           <section className='exp__section'>
-            <h2 className='heading heading__h2'>Work Experience</h2>
+            <h2 className='heading heading__h2 heading__h2__blue'>
+              Work Experience
+            </h2>
             <div className='exp'>{showExperience(workData)}</div>
           </section>
           <section className='exp__section'>

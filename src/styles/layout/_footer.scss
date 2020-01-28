@@ -25,12 +25,12 @@ footer {
   &:hover {
     transform: scale(1.05);
     & path {
-      fill: $color-gray;
+      fill: $color-cyan;
     }
   }
 
   & path {
-    fill: $color-light;
+    fill: $color-platinum;
     transition: all 0.3s;
   }
 }

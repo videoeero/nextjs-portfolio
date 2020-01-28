@@ -1,5 +1,9 @@
 export default [
-  { title: 'HTML, CSS/SASS, Vanilla JS', level: 9 },
+  {
+    title: 'HTML, CSS/SASS, Vanilla JS',
+    level: 9,
+    text: 'Lorem ipsum dasdasdsa'
+  },
   { title: 'ReactJS', level: 8 },
   { title: 'Typescript', level: 6 },
   { title: 'NodeJS', level: 7 },

@@ -3,7 +3,7 @@
   z-index: 10;
   width: 100vw;
   // background-color: rgba($color-black, 0.7);
-  height: 4rem;
+  height: 5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,10 +16,34 @@
   ) !important;
 
   &__list {
+    @extend .flex;
     font-size: $default-font-size;
+
     &__item {
       padding: 1rem;
+      margin-top: 1rem;
       color: $color-light !important;
+      transition: all 0.3s;
+
+      &::after {
+        content: '';
+        display: block;
+        margin: 0.5rem auto;
+        height: 3px;
+        background-color: $color-cyan;
+        width: 30%;
+        opacity: 0;
+        transition: all 0.3s;
+        // transition: all 0.3s;
+      }
+
+      &:hover {
+        color: $color-cyan !important;
+        &::after {
+          opacity: 1;
+          width: 100%;
+        }
+      }
     }
   }
 }
