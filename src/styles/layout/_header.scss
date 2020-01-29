@@ -16,9 +16,11 @@
   }
 
   &__wrapper {
-    @extend .flex;
-
     &__headings {
+      @extend .flex, .flex__column;
+      // display: flex;
+      // justify-content: center;
+      // align-items: flex-end;
     }
   }
 

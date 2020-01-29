@@ -24,17 +24,23 @@
       margin-top: 1rem;
       color: $color-light !important;
       transition: all 0.3s;
+      white-space: pre-line;
+      text-align: center;
 
       &::after {
         content: '';
         display: block;
         margin: 0.5rem auto;
-        height: 3px;
+        height: 2px;
         background-color: $color-cyan;
         width: 30%;
         opacity: 0;
         transition: all 0.3s;
         // transition: all 0.3s;
+      }
+
+      &.active {
+        color: $color-cyan !important;
       }
 
       &:hover {

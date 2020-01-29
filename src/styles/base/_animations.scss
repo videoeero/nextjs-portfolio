@@ -1,17 +1,17 @@
-.fadeIn {
-  animation: fadeIn ease-out 1;
-  animation-duration: 0.4s;
-}
+// .fadeIn {
+//   animation: fadeIn ease-out 1;
+//   animation-duration: 0.4s;
+// }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
 
-  100% {
-    opacity: 1;
-  }
-}
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 .rollTitles {
   animation: rollTitles 10s ease-in-out 0s infinite;
@@ -62,4 +62,23 @@
   100% {
     width: 100%;
   }
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateX(-100vw);
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms;
+}
+.page-transition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: all 300ms;
 }

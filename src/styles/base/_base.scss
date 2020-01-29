@@ -10,9 +10,10 @@
 a,
 a:link,
 a:visited {
-  color: $color-black;
+  color: $color-plum;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 html,

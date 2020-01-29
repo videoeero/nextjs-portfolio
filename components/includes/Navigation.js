@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
+import Link from '../ActiveLink';
 
 class Navigation extends Component {
   render() {
@@ -7,16 +8,16 @@ class Navigation extends Component {
       <>
         <nav className='nav'>
           <div className='nav__list'>
-            <Link href='/'>
+            <Link activeClassName='active' href='/'>
               <a className='nav__list__item'>Who am I?</a>
             </Link>
-            <Link href='/skills'>
+            <Link activeClassName='active' href='/skills'>
               <a className='nav__list__item'>Skills & Experience</a>
             </Link>
-            <Link href='/portfolio'>
+            <Link activeClassName='active' href='/portfolio'>
               <a className='nav__list__item'>Portfolio</a>
             </Link>
-            <Link href='/contact'>
+            <Link activeClassName='active' href='/contact'>
               <a className='nav__list__item'>Contact</a>
             </Link>
           </div>

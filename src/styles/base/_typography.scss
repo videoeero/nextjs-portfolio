@@ -3,7 +3,7 @@ h2,
 h3,
 h4,
 .paragraph {
-  max-width: 90%;
+  max-width: 90vw;
 }
 
 p,
@@ -26,13 +26,18 @@ li {
     font-weight: 400;
     letter-spacing: 4px;
     text-align: left;
-    white-space: nowrap;
     color: $color-platinum;
+    white-space: nowrap;
+
+    & span {
+      white-space: nowrap;
+    }
 
     @include respond(tab-port) {
       font-size: 4rem;
     }
     @include respond(phone) {
+      white-space: pre-wrap;
       font-size: 2.5rem;
     }
   }
@@ -40,7 +45,8 @@ li {
   &__h2 {
     font-size: 3.5rem;
     letter-spacing: 2px;
-    margin-bottom: 2rem;
+    max-width: 40rem;
+    // color: $color-blue;
     @include respond(tab-port) {
       font-size: 2.7rem;
     }
@@ -48,28 +54,60 @@ li {
       font-size: 2.2rem;
     }
 
-    &::after,
-    &::before {
-      content: '';
-      display: block;
-      margin: 1rem auto;
-      height: 3px;
-      background-color: $color-plum;
-      width: 100%;
+    @include respond(small-phone) {
+      font-size: 1.9rem;
     }
 
-    &__blue {
-      &::after,
-      &::before {
-        background-color: $color-blue;
-      }
-    }
+    // &::after,
+    // &::before {
+    //   content: '';
+    //   display: block;
+    //   margin: 1rem auto;
+    //   height: 3px;
+    //   background-color: $color-plum;
+    //   width: 100%;
+    // }
+
+    // &__blue {
+    //   &::after,
+    //   &::before {
+    //     background-color: $color-blue;
+    //   }
+    // }
   }
 
   &__h3 {
     text-transform: initial;
     font-size: 2rem;
     letter-spacing: 1px;
+  }
+
+  &__wrapper {
+    @extend .flex;
+    margin-bottom: 2rem;
+
+    border-bottom: 3px solid $color-blue;
+    border-top: 3px solid $color-blue;
+    padding: 1.2rem 0.5rem;
+
+    &__plum {
+      border-bottom: 3px solid $color-plum;
+      border-top: 3px solid $color-plum;
+
+      & .heading__icon {
+        fill: $color-plum;
+      }
+    }
+  }
+
+  &__icon {
+    height: 4rem;
+    margin-right: 2rem;
+    fill: $color-blue;
+
+    @include respond(phone) {
+      margin-right: 1rem;
+    }
   }
 }
 
@@ -92,7 +130,10 @@ li {
 
   &__link {
     font-weight: 700;
-    color: $color-plum !important;
+
+    &:hover {
+      color: $color-blue;
+    }
   }
 
   @include respond(tab-port) {

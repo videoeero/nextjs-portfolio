@@ -1,4 +1,4 @@
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import React from 'react';
 
 import MainLayout from '../components/layouts/mainLayout';

@@ -1,6 +1,8 @@
 section {
   @extend .flex, .flex__column;
   margin: 3rem 0;
+  min-height: 30vh;
+  justify-content: flex-start;
 }
 
 .education {
@@ -37,6 +39,8 @@ section {
     align-items: flex-end;
     justify-content: center;
     position: relative;
+    transition: all 0.4s;
+    border-radius: 3px;
     cursor: pointer;
 
     &.active {
@@ -61,6 +65,7 @@ section {
       & .skills__wrapper {
         opacity: 0;
         visibility: hidden;
+
         // height: 0;
       }
     }
@@ -71,9 +76,16 @@ section {
     align-items: center;
     justify-content: flex-end;
     width: initial;
-    transition: all 0.4s;
+    transition: all 0.3s;
     margin: 0.5rem;
     border-radius: 3px;
+    max-width: 95vw;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-platinum;
+      padding: 0.5rem;
+    }
 
     // background-color: $color-blue;
   }
@@ -81,11 +93,16 @@ section {
   &__title {
     max-width: 28rem;
     margin-right: 1rem;
-    transition: all 0.3s;
+    // transition: color 0.1s;
+    text-align: right;
 
     @include respond(phone) {
       width: 15rem;
       margin-right: 1rem;
+    }
+
+    @include respond(small-phone) {
+      width: 10rem;
     }
   }
 
@@ -100,6 +117,10 @@ section {
 
     @include respond(phone) {
       width: 20rem;
+    }
+
+    @include respond(small-phone) {
+      width: 15rem;
     }
 
     &__inner {
