@@ -1,9 +1,14 @@
 // THEME COLORS
 
 $color-plum: #c0227e;
+$color-plum-2: #d447aa;
 $color-gunmetal: #2d3142;
 $color-blue: #212e9e;
+
 $color-cyan: #01baef;
+
+$color-green: #27ee73;
+$color-green-2: #2afadf;
 $color-platinum: #e9e7ee;
 // $color-plum: #923169;
 // $color-lavender: #c6b9cd;
@@ -47,3 +52,6 @@ $color-white: #ffffff;
 
 // FONT
 $default-font-size: 1.6rem;
+$gradient-plum: linear-gradient(to left, $color-plum, $color-plum-2);
+$gradient-green: linear-gradient(to left, $color-green-2, $color-green);
+$gradient-blue: linear-gradient(to left, $color-blue, $color-cyan);

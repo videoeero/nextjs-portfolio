@@ -17,8 +17,42 @@ li {
   text-align: center;
   display: inline-block;
 
-  &__name {
+  &__borders {
+    margin-bottom: 2rem;
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      margin: 1rem auto;
+      height: 3px;
+      background-image: $gradient-plum;
+      width: 100%;
+    }
+
+    &__blue {
+      @extend .heading__borders;
+      &::after,
+      &::before {
+        background-image: $gradient-blue;
+      }
+    }
+  }
+
+  &__color {
     color: $color-plum;
+    transition: color 0.5s ease-in-out;
+  }
+
+  &__gradient {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: $gradient-plum;
+
+    &__blue {
+      @extend .heading__gradient;
+      background-image: $gradient-blue;
+    }
   }
 
   &__h1 {
@@ -40,13 +74,19 @@ li {
       white-space: pre-wrap;
       font-size: 2.5rem;
     }
+
+    &__colored {
+      color: transparent;
+      background-image: $gradient-plum;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
   }
 
   &__h2 {
     font-size: 3.5rem;
     letter-spacing: 2px;
     max-width: 40rem;
-    // color: $color-blue;
     @include respond(tab-port) {
       font-size: 2.7rem;
     }
@@ -57,23 +97,6 @@ li {
     @include respond(small-phone) {
       font-size: 1.9rem;
     }
-
-    // &::after,
-    // &::before {
-    //   content: '';
-    //   display: block;
-    //   margin: 1rem auto;
-    //   height: 3px;
-    //   background-color: $color-plum;
-    //   width: 100%;
-    // }
-
-    // &__blue {
-    //   &::after,
-    //   &::before {
-    //     background-color: $color-blue;
-    //   }
-    // }
   }
 
   &__h3 {
@@ -84,11 +107,11 @@ li {
 
   &__wrapper {
     @extend .flex;
-    margin-bottom: 2rem;
+    // background-color: lightblue;
 
-    border-bottom: 3px solid $color-blue;
-    border-top: 3px solid $color-blue;
-    padding: 1.2rem 0.5rem;
+    // border-bottom: 3px solid $color-blue;
+    // border-top: 3px solid $color-blue;
+    // padding: 1.2rem 0.5rem;
 
     &__plum {
       border-bottom: 3px solid $color-plum;
@@ -101,9 +124,11 @@ li {
   }
 
   &__icon {
-    height: 4rem;
+    display: block;
+    height: 6rem;
+    // width: 4rem;
     margin-right: 2rem;
-    fill: $color-blue;
+    // fill: $color-blue;
 
     @include respond(phone) {
       margin-right: 1rem;

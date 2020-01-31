@@ -10,17 +10,28 @@
   );
   width: 100vw;
 
-  &__image {
-    width: 30rem;
-    margin-right: 2rem;
-  }
-
   &__wrapper {
-    &__headings {
-      @extend .flex, .flex__column;
-      // display: flex;
-      // justify-content: center;
-      // align-items: flex-end;
+    @extend .flex, .flex__column;
+
+    &__plum {
+      @extend .header__wrapper;
+      & .heading__color {
+        color: $color-plum;
+      }
+    }
+
+    &__blue {
+      @extend .header__wrapper;
+      & .heading__color {
+        color: $color-cyan;
+      }
+    }
+
+    &__green {
+      @extend .header__wrapper;
+      & .heading__color {
+        color: $color-green;
+      }
     }
   }
 
@@ -47,10 +58,11 @@
   }
 
   &__title {
+    @extend .heading__color;
+
     line-height: 6rem;
     display: block;
     text-align: left;
-    color: $color-plum;
     @include respond(tab-port) {
       line-height: 4.6rem;
     }

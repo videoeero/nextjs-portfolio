@@ -13,6 +13,13 @@ export default [
     description:
       'An official in student organization for helping, advicing and supervising younger students to maintain traditions and give insight in difficult situtations. Also arraging alumni meetings with other senior computer science students.'
   },
+  {
+    year: '2018',
+    employer: 'Asteriski ry',
+    title: 'Website/media/marketing guy for ATK-YTP 2018',
+    description:
+      "ATK-YTP is an annual CS students' seminar event and Turku was the host in 2018. Our pre-event materials were so successful that we broke the records of students attending the event. And the feedback afterwards surprisingly was, that participants wished that Turku, the original capital of Finland, would host ATK-YTP always. For more details, see the portfolio page!"
+  },
 
   {
     year: '2018',
@@ -23,24 +30,22 @@ export default [
   },
   {
     year: '2016',
-    employer: 'the Student Union of the University of Turku',
+    employer: 'The Student Union of the University of Turku',
     title: 'Kuntanauha (Badge of merit)',
     description:
       'For my work in Asteriski ry I was awarded this badge of merit.'
   },
   {
     year: '2014 & 2016',
-    employer:
-      'Asteriski ry, the student organization of computer science in University of Turku',
+    employer: 'Asteriski ry',
     title: 'Member of Board',
     description:
-      'As a board member, in 2014 I was responsible for student affairs and in 2016 for communication.'
+      'As a board member of Asteriski ry (the student organization of computer science students of University of Turku), in 2014 I was responsible for the student affairs and in 2016 for the communication.'
   },
   {
     year: '2012 & 2014–2017',
-    employer: 'Student tutor',
-    employer:
-      'Asteriski ry, the student organization of computer science in University of Turku',
+    employer: 'Asteriski ry',
+    title: 'Student tutor',
     description:
       'Tutoring younger students is one of the best things you can do during your studies.'
   }
