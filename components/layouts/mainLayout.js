@@ -4,21 +4,12 @@ import Header from '../includes/Header';
 import Footer from '../includes/Footer';
 import Head from 'next/head';
 import { PageTransition } from 'next-page-transitions';
-
-// import '../../styles/main.scss';
+import { withRouter } from 'next/router';
 
 class MainLayout extends Component {
-  static async getInitialProps({ Component, router, ctx }) {
-    let pageProps = {};
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
-    console.log(pageProps);
-    return { pageProps };
-  }
-
   render() {
+    const { children, router } = this.props;
+
     return (
       <>
         <Head>
@@ -41,7 +32,9 @@ class MainLayout extends Component {
           <Navigation />
           <Header />
           <PageTransition timeout={300} classNames='page-transition'>
-            {this.props.children}
+            {React.cloneElement(children, {
+              key: router.pathname
+            })}
           </PageTransition>
           <Footer />
         </div>
@@ -50,4 +43,4 @@ class MainLayout extends Component {
   }
 }
 
-export default MainLayout;
+export default withRouter(MainLayout);

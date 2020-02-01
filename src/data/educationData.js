@@ -11,7 +11,6 @@ export default [
     employer: "Teacher's Pedagogical Studies",
     title: 'University of Turku',
     description:
-      'Pedagogigal studies focused on teaching both adults and minors.',
-    shortDesc: true
+      'Sixty study points in pedagogigal studies focused on teaching both adults and minors.'
   }
 ];

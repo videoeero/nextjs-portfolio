@@ -4,7 +4,7 @@ import React from 'react';
 import MainLayout from '../components/layouts/mainLayout';
 import '../src/styles/main.scss';
 
-class MyApp extends App {
+class WebsiteApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
@@ -15,4 +15,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default WebsiteApp;

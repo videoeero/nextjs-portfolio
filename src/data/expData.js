@@ -4,14 +4,14 @@ export default [
     employer: 'HybridiSpeksi',
     title: 'Various roles in production',
     description:
-      "Participating yearly in production of HybridiSpeksi (theatre production of students from Faculty of Science and Engineering in University of Turku). I've been an active member especially in teams for website, videos, graphics, screenwriting, technical stuff, general production and three times even as a performer, both acting and dancing!"
+      "Participating in annual production of HybridiSpeksi (theatre production of students from Faculty of Science and Engineering in University of Turku). I've been an active member especially in teams for website, videos, graphics, screenwriting, technical stuff, general production and three times even as a performer, both acting and dancing!"
   },
   {
     year: '2018 – 2019',
     employer: 'Asteriski ry',
     title: 'Jäärä (The Fogey) ',
     description:
-      'An official in student organization for helping, advicing and supervising younger students to maintain traditions and give insight in difficult situtations. Also arraging alumni meetings with other senior computer science students.'
+      'An official in student organization for helping, advicing and supervising younger students to maintain traditions and give insight in difficult situtations. Also responsible for arranging alumni meetings with other senior computer science students.'
   },
   {
     year: '2018',
@@ -33,7 +33,8 @@ export default [
     employer: 'The Student Union of the University of Turku',
     title: 'Kuntanauha (Badge of merit)',
     description:
-      'For my work in Asteriski ry I was awarded this badge of merit.'
+      'For my work in Asteriski ry I was awarded this badge of merit.',
+    shortDesc: true
   },
   {
     year: '2014 & 2016',

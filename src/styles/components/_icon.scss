@@ -1,0 +1,41 @@
+.heading {
+  &__icon {
+    display: block;
+    height: 6rem;
+    margin-right: 2rem;
+    fill: $gradient-blue;
+
+    @include respond(phone) {
+      height: 4rem;
+      margin-right: 1rem;
+    }
+
+    &__large {
+      @extend .heading__icon;
+      height: 10rem;
+      @include respond(phone) {
+        height: 6rem;
+      }
+    }
+  }
+}
+
+.icon-bg {
+  &__plum {
+    fill: url(#icon-gradient-plum) $color-dark;
+  }
+
+  &__blue {
+    fill: url(#icon-gradient-blue) $color-dark;
+  }
+}
+
+#icon-gradient-blue {
+  --color-1: #01baef;
+  --color-2: #0184ef;
+}
+
+#icon-gradient-plum {
+  --color-1: #c0227e;
+  --color-2: #c02251;
+}
