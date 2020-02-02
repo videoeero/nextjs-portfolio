@@ -1,17 +1,54 @@
 .button {
-  padding: 1rem 3rem;
-  font-size: 2rem;
+  padding: 1rem 1rem;
   border-radius: 5px;
   margin: 1rem;
   transition: all 0.3s;
   box-shadow: 0px 2px 5px rgba(8, 5, 5, 0.3);
-  font-size: 2rem;
+  font-size: $default-font-size;
   text-align: center;
   display: inline-block;
+  // overflow: hidden;
+  min-width: 20rem;
+  position: relative;
+  background-color: $color-blue;
+  background-image: $gradient-blue;
+  color: $color-platinum !important;
+  min-width: 20rem;
+
+  &__title {
+    color: $color-platinum !important;
+  }
+
+  &__bg {
+    &__blue,
+    &__green {
+      @extend .flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: $gradient-blue;
+      z-index: 0;
+      color: $color-platinum;
+      transition: all 0.3s;
+    }
+
+    &__red {
+      background-image: $gradient-red;
+    }
+  }
 
   &:hover {
-    background-color: $color-gray;
     transform: scale(1.05);
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+
+    & .button__bg__blue {
+      opacity: 0;
+    }
+
+    & .button__bg__green {
+      // opacity: 1;
+    }
   }
 }

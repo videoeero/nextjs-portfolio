@@ -4,9 +4,9 @@ import Link from 'next/link';
 class Home extends Component {
   render() {
     return (
-      <React.Fragment key='indexPage'>
+      <>
         <section id='#about' className='about'>
-          <h2 className='heading heading__h2'>Who am I?</h2>
+          <h2 className='heading__h2'>Who am I?</h2>
           <p className='paragraph paragraph__strong'>
             Half Coder, half Designer, extended from Teacher class component
           </p>
@@ -34,7 +34,7 @@ class Home extends Component {
             , if you are interested in working with me!
           </p>
         </section>
-      </React.Fragment>
+      </>
     );
   }
 }

@@ -10,7 +10,7 @@
 a,
 a:link,
 a:visited {
-  color: $color-plum;
+  color: $color-red;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
@@ -56,6 +56,6 @@ body {
 }
 
 ::selection {
-  background-color: $color-plum;
+  background-color: $color-red;
   color: $color-platinum;
 }

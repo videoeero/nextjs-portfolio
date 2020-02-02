@@ -27,7 +27,6 @@ class Footer extends Component {
             rel='noopener'
             target='_blank'
           >
-            >
             <svg
               className='icon icon__github'
               xmlns='http://www.w3.org/2000/svg'

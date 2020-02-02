@@ -18,7 +18,7 @@ export default [
     employer: 'Asteriski ry',
     title: 'Website/media/marketing guy for ATK-YTP 2018',
     description:
-      "ATK-YTP is an annual CS students' seminar event and Turku was the host in 2018. Our pre-event materials were so successful that we broke the records of students attending the event. And the feedback afterwards surprisingly was, that participants wished that Turku, the original capital of Finland, would host ATK-YTP always. For more details, see the portfolio page!"
+      "ATK-YTP is an annual CS students' seminar event and Turku was the host in 2018. For more details, see the portfolio page!"
   },
 
   {

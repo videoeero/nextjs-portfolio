@@ -21,8 +21,8 @@
 }
 
 .icon-bg {
-  &__plum {
-    fill: url(#icon-gradient-plum) $color-dark;
+  &__red {
+    fill: url(#icon-gradient-red) $color-dark;
   }
 
   &__blue {
@@ -32,10 +32,10 @@
 
 #icon-gradient-blue {
   --color-1: #01baef;
-  --color-2: #0184ef;
+  --color-2: #2a37b1;
 }
 
-#icon-gradient-plum {
+#icon-gradient-red {
   --color-1: #c0227e;
-  --color-2: #c02251;
+  --color-2: #ce5b3f;
 }

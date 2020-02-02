@@ -13,7 +13,7 @@ export default class Skill extends Component {
           onClick={() => this.props.handleClick(this.props.index)}
         >
           <div className='skills__text'>
-            <h4 className='heading heading__h3'>{skill.title}</h4>
+            <h3 className='heading__h3'>{skill.title}</h3>
             <p className='skills__text__paragraph'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
               optio corporis nesciunt magnam quod ratione aliquid, dignissimos,

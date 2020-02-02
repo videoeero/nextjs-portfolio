@@ -1,0 +1,52 @@
+.portfolio {
+  @extend .flex, .flex__column;
+  width: 100vw;
+  &__item {
+    @extend .flex, .flex__column;
+
+    margin-bottom: 4rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 90vw;
+    flex-wrap: wrap;
+
+    &__right {
+      // @extend .flex, .flex__column;
+      // flex-wrap: wrap;
+      width: 50rem;
+      // max-width: 90vw;
+    }
+
+    &__text {
+      margin: 1rem;
+
+      position: relative;
+    }
+  }
+
+  &__description {
+    height: 5rem;
+    overflow: hidden;
+    font-size: $default-font-size;
+  }
+
+  &__paragraph {
+    text-align: justify;
+    background-color: $color-platinum;
+  }
+
+  &__buttons {
+    @extend .flex;
+    flex-wrap: wrap;
+    // width: 100%;
+  }
+
+  &__image {
+    width: 20rem;
+    margin: 1rem;
+  }
+}

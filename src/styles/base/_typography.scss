@@ -16,53 +16,21 @@ li {
   text-align: center;
   display: inline-block;
 
-  &__borders {
-    margin-bottom: 2rem;
-    &::after,
-    &::before {
-      content: '';
-      display: block;
-      margin: 1rem auto;
-      height: 3px;
-      background-image: $gradient-plum;
-      width: 100%;
-    }
-
-    &__blue {
-      @extend .heading__borders;
-      &::after,
-      &::before {
-        background-image: $gradient-blue;
-      }
-    }
-  }
-
   &__color {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: $gradient-plum;
+    background-image: $gradient-red;
     transition: color 0.5s ease-in-out;
   }
 
-  &__gradient {
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: $gradient-plum;
-
-    &__blue {
-      @extend .heading__gradient;
-      background-image: $gradient-blue;
-    }
-  }
-
   &__h1 {
+    @extend .heading;
+    width: 100%;
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: 400;
     letter-spacing: 4px;
-    text-align: left;
     color: $color-platinum;
     white-space: nowrap;
 
@@ -80,13 +48,14 @@ li {
 
     &__colored {
       color: transparent;
-      background-image: $gradient-plum;
+      background-image: $gradient-red;
       background-clip: text;
       -webkit-background-clip: text;
     }
   }
 
   &__h2 {
+    @extend .heading;
     font-size: 4.5rem;
     letter-spacing: 2px;
     font-family: 'Arvo', serif;
@@ -104,6 +73,7 @@ li {
   }
 
   &__h3 {
+    @extend .heading;
     text-transform: initial;
     font-size: 2rem;
     letter-spacing: 1px;
@@ -112,6 +82,7 @@ li {
   &__wrapper {
     @extend .flex;
     max-width: 60rem;
+    margin-bottom: 2rem;
 
     @include respond(tab-port) {
       max-width: 50rem;
@@ -125,9 +96,9 @@ li {
       max-width: 90vw;
     }
 
-    &__plum {
-      border-bottom: 3px solid $color-plum;
-      border-top: 3px solid $color-plum;
+    &__red {
+      border-bottom: 3px solid $color-red;
+      border-top: 3px solid $color-red;
     }
   }
 }
@@ -163,7 +134,7 @@ li {
 }
 
 #header {
-  &__plum,
+  &__red,
   &__blue,
   &__green {
     opacity: 0;
