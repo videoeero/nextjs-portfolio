@@ -2,44 +2,101 @@ import React, { Component } from 'react';
 import portfolioData from '../src/data/portfolioData';
 
 class portfolio extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      activeShowcase: portfolioData.map(el => false)
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(index) {
+    const showcaseStatus = [...this.state.activeShowcase];
+    showcaseStatus.map((el, i) => {
+      if (i != index) {
+        showcaseStatus[i] = false;
+      }
+    });
+    showcaseStatus[index] = !this.state.activeShowcase[index];
+    this.setState({ activeShowcase: showcaseStatus });
+  }
+
   render() {
+    const { activeShowcase } = this.state;
+
     const showPortfolio = array =>
       array.map((work, index) => {
-        const { title, summary, description, url, resources } = work;
+        const {
+          title,
+          summary,
+          description,
+          image,
+          slug,
+          url,
+          resources
+        } = work;
 
         return (
           <div key={`portfolio__${index}`} className='portfolio__item'>
-            <h2 className='heading__h2 portfolio__title'>{title}</h2>
-            <p className='paragraph paragraph__strong'>{summary}</p>
             <div className='portfolio__wrapper'>
-              <img
-                src='img/eero.jpg'
-                alt={title}
+              <a
                 className='portfolio__image'
-              />
+                id={`${slug}_bg`}
+                href={url}
+                target='_blank'
+                rel='noopener'
+                style={{ backgroundImage: `url(${image})` }}
+              >
+                &nbsp;
+              </a>
+              {/* <img src={image} alt={title} className='portfolio__image' /> */}
               <div className='portfolio__wrapper__right'>
-                <div className='portfolio__wrapper__text'>
-                  <div className='portfolio__description'>
-                    <p className='portfolio__paragraph'>{description}</p>
-                  </div>
-                  <button className='button portfolio__showMore'>
-                    Show more
-                  </button>
-                </div>
-
+                <h2 className='heading__h2 portfolio__title'>{title}</h2>
+                <p className='paragraph paragraph__italic'>{summary}</p>
                 <div className='portfolio__buttons'>
                   {resources.map((item, i) => (
                     <a
                       key={`${title}_res_${i}`}
-                      className='button'
+                      className='paragraph__link'
                       href={item.url}
+                      target='_blank'
+                      rel='noopener'
                     >
-                      <div className='button__bg__red'>{item.title}</div>
-                      <div className='button__bg__blue'>{item.title}</div>
-
-                      <p className='button__title'>{item.title}</p>
+                      {item.title}
                     </a>
                   ))}
+                </div>
+                <div className='portfolio__wrapper__text'>
+                  <div
+                    className={
+                      activeShowcase[index]
+                        ? 'portfolio__description active'
+                        : 'portfolio__description'
+                    }
+                  >
+                    <p className='portfolio__paragraph'>{description}</p>
+                    <div className='portfolio__fog'>&nbsp;</div>
+                    <button
+                      onClick={() => this.handleClick(index)}
+                      className='portfolio__button'
+                    >
+                      <svg
+                        className={
+                          activeShowcase[index]
+                            ? 'portfolio__button__icon active'
+                            : 'portfolio__button__icon'
+                        }
+                        xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 80 48.8'
+                      >
+                        <path d='M40 48.8L0 8.8 8.8 0 40 31.2 71.2 0 80 8.8z' />
+                      </svg>
+                    </button>
+                  </div>
+
+                  {/* <div className='portfolio__showmore'></div> */}
                 </div>
               </div>
             </div>

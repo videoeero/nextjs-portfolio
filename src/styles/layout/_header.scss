@@ -21,6 +21,8 @@
     flex-direction: column;
     align-items: center;
     transition: opacity 2s ease-in;
+    max-width: 90vw;
+    width: 90vw;
 
     &.active {
       transition: opacity 2s ease-out;
@@ -57,14 +59,31 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 6rem;
-    overflow: hidden;
+    flex-wrap: wrap;
+    // height: 6rem;
+    // overflow: hidden;
 
-    @include respond(tab-port) {
-      height: 4.6rem;
-    }
-    @include respond(phone) {
-      height: 3rem;
+    // @include respond(tab-port) {
+    //   height: 4.6rem;
+    // }
+    // @include respond(phone) {
+    //   height: 3rem;
+    // }
+
+    &__cont {
+      height: 6rem;
+      overflow: hidden;
+
+      @include respond(tab-land) {
+        height: 4.6rem;
+      }
+
+      @include respond(tab-port) {
+        height: 4.6rem;
+      }
+      @include respond(phone) {
+        height: 3rem;
+      }
     }
   }
 
@@ -74,8 +93,13 @@
     line-height: 6rem;
     display: block;
     text-align: left;
+
+    @include respond(tab-land) {
+      line-height: 5rem;
+    }
+
     @include respond(tab-port) {
-      line-height: 4.6rem;
+      line-height: 3.8rem;
     }
     @include respond(phone) {
       line-height: 3rem;

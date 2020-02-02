@@ -14,6 +14,15 @@ a:visited {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
+  font-size: $default-font-size;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  font-weight: 700;
+  font-size: $default-font-size;
 }
 
 html,

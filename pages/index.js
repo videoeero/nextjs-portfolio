@@ -7,7 +7,7 @@ class Home extends Component {
       <>
         <section id='#about' className='about'>
           <h2 className='heading__h2'>Who am I?</h2>
-          <p className='paragraph paragraph__strong'>
+          <p className='paragraph paragraph__italic'>
             Half Coder, half Designer, extended from Teacher class component
           </p>
           <p className='paragraph'>
@@ -19,7 +19,7 @@ class Home extends Component {
             does his best to share good practices among co-workers and learners.
           </p>
           <p className='paragraph'>
-            For more accurate statistics about things I have done, check out
+            For more details about things I have done, check out
             <Link href='/skills'>
               <a className='paragraph__link'> Skills & Experience</a>
             </Link>{' '}
@@ -27,12 +27,18 @@ class Home extends Component {
             <Link href='/skills'>
               <a className='paragraph__link'> Portfolio</a>
             </Link>{' '}
-            for some of my most recent work. Please feel free to
+            for some of my favorite projects. Please feel free to
             <a href='mailto:eero.suvanto@gmail.com' className='paragraph__link'>
               &nbsp;contact me
             </a>
             , if you are interested in working with me!
           </p>
+          <a className='button' href='#'>
+            <div className='button__bg__red'>Nappula</div>
+            <div className='button__bg__blue'>Nappula</div>
+
+            <p className='button__title'>Nappula</p>
+          </a>
         </section>
       </>
     );

@@ -32,14 +32,18 @@ li {
     font-weight: 400;
     letter-spacing: 4px;
     color: $color-platinum;
-    white-space: nowrap;
+    // text-align: left;
 
     & span {
       white-space: nowrap;
     }
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       font-size: 4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3rem;
     }
     @include respond(phone) {
       white-space: pre-wrap;
@@ -110,7 +114,7 @@ li {
   width: 80rem;
   max-width: 90%;
 
-  &__strong {
+  &__italic {
     font-style: italic;
     font-weight: 300;
     text-align: center;

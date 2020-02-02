@@ -3,35 +3,72 @@
   width: 100vw;
   &__item {
     @extend .flex, .flex__column;
-
     margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    text-align: left;
   }
 
   &__wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 90vw;
-    flex-wrap: wrap;
+    align-items: center;
+    max-width: 95vw;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
     &__right {
-      // @extend .flex, .flex__column;
-      // flex-wrap: wrap;
-      width: 50rem;
-      // max-width: 90vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 1rem;
+      width: 45rem;
+      max-width: 90vw;
+      margin: 1rem;
+
+      & .paragraph {
+        margin: 2rem 0 1rem 0;
+        width: initial;
+        // text-align: left;
+      }
+      @include respond(phone) {
+        align-items: center;
+      }
     }
 
     &__text {
-      margin: 1rem;
-
+      @extend .flex, .flex__column;
+      margin: 1rem 0;
       position: relative;
     }
   }
 
   &__description {
-    height: 5rem;
+    max-height: 5rem;
     overflow: hidden;
     font-size: $default-font-size;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    padding-right: 5rem;
+    @include respond(phone) {
+      padding-right: 0;
+      max-height: 8rem;
+      padding-bottom: 5rem;
+    }
+
+    &.active {
+      max-height: 30rem;
+
+      & .portfolio__fog {
+        height: 0;
+      }
+    }
   }
 
   &__paragraph {
@@ -39,14 +76,114 @@
     background-color: $color-platinum;
   }
 
+  &__fog {
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.3s;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-platinum, 0),
+      rgba($color-platinum, 1) 100%
+    );
+
+    @include respond(phone) {
+      height: 6rem;
+      background-image: linear-gradient(
+        to bottom,
+        rgba($color-platinum, 0),
+        rgba($color-platinum, 1) 60%
+      );
+    }
+  }
+
   &__buttons {
-    @extend .flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    // width: 100%;
+
+    & a {
+      margin: 0 0.5rem;
+      padding: 1rem;
+    }
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    color: $color-green;
+    padding: 1rem;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include respond(phone) {
+      right: 50%;
+      bottom: 0;
+      transform: translate(50%, 30%);
+    }
+
+    &__icon {
+      padding-top: 0.5rem;
+      width: 3rem;
+      fill: $color-green-2;
+      transition: all 0.3s ease-in-out;
+      @include respond(phone) {
+        width: 4rem;
+      }
+
+      &.active {
+        transform: rotate(180deg) translate(0, -0.5rem);
+        fill: $color-green;
+        padding-top: 0;
+
+        @include respond(phone) {
+          transform: rotate(180deg) translate(0, -2rem);
+        }
+      }
+    }
+
+    &:hover .portfolio__button__icon {
+      transform: rotate(0) translate(0, 0.5rem);
+
+      &.active {
+        transform: rotate(180deg) translate(0, 0.5rem);
+        @include respond(phone) {
+          transform: rotate(180deg) translate(0, -1rem);
+        }
+      }
+    }
   }
 
   &__image {
-    width: 20rem;
-    margin: 1rem;
+    width: 25rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 2rem 1rem 0;
+
+    &:hover {
+      filter: brightness(1.1) contrast(1.5);
+    }
+
+    @include respond(phone) {
+      margin: 1rem;
+      width: 100%;
+      height: 18rem;
+
+      &#hybridispeksi_bg {
+        background-position: 0 6%;
+      }
+
+      &#atkytp2018_bg {
+        background-position: 0 13%;
+      }
+    }
   }
 }
