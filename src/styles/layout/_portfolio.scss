@@ -14,8 +14,8 @@
   &__wrapper {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    align-items: center;
+    align-items: stretch;
+
     max-width: 95vw;
 
     @include respond(phone) {
@@ -35,7 +35,10 @@
       & .paragraph {
         margin: 2rem 0 1rem 0;
         width: initial;
-        // text-align: left;
+        text-align: left;
+        @include respond(phone) {
+          text-align: center;
+        }
       }
       @include respond(phone) {
         align-items: center;

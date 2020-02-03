@@ -82,3 +82,57 @@
   transform: translateX(100vw);
   transition: all 300ms;
 }
+
+.me {
+  &__icons,
+  &__icon {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+  }
+}
+
+.me__icons {
+  animation-name: showIcons;
+}
+
+.me__icon {
+  animation-name: rotateIcons;
+}
+
+.me__img {
+  animation: fadeIn 1s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes showIcons {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIcons {
+  0% {
+    transform: rotate(-180deg) translate(-50%, 0);
+  }
+
+  100% {
+    transform: rotate(0) translate(-50%, 0);
+  }
+}

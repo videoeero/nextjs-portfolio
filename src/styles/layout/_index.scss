@@ -1,0 +1,179 @@
+.me {
+  @extend .flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+  &__wrapper {
+    &__left {
+      position: relative;
+      height: 45rem;
+      width: 40rem;
+      @include respond(tab-port) {
+        height: 40rem;
+        width: 35rem;
+        max-width: 90vw;
+      }
+    }
+
+    &__right {
+      margin: 2rem 6rem;
+      max-width: 40rem;
+
+      @include respond(tab-port) {
+        margin: 2rem 4rem;
+        max-width: 30rem;
+      }
+
+      & .paragraph__italic {
+        width: initial;
+        text-align: right;
+        margin: 0.5rem 0;
+      }
+    }
+
+    // border: 2px solid $color-green;
+  }
+
+  &__paragraph {
+    text-align: justify;
+    margin: 2rem 0 1.5rem 0;
+  }
+
+  &__icons {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    @extend .flex, .flex__column;
+    width: 8rem;
+    height: 10rem;
+    position: absolute;
+    text-align: center;
+    color: $color-dark;
+    transform: scale(1) translate(-50%, 0);
+    transition: all 0.3s;
+    transform-origin: left;
+
+    & svg {
+      max-height: 8rem;
+    }
+
+    &:hover {
+      & svg {
+        transform: scale(1.08);
+      }
+
+      & h3 {
+        border-bottom: 2px solid $color-dark;
+      }
+    }
+
+    & svg {
+      width: 5rem;
+      transition: all 0.3s;
+    }
+
+    &__heading {
+      margin-top: 1rem;
+      font-size: $default-font-size;
+      padding-bottom: 0.5rem;
+      transition: all 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+  }
+
+  &__img {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/eero.jpg');
+    transition: all 0.5s;
+    transform-origin: left;
+    cursor: pointer;
+    filter: grayscale(1);
+
+    &:hover {
+      filter: grayscale(0);
+    }
+
+    @include respond(tab-port) {
+      width: 17rem;
+      height: 17rem;
+    }
+    @include respond(phone) {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    &:active {
+      filter: grayscale(0);
+      background-image: url('/img/eero2.jpg');
+    }
+  }
+}
+
+#me__icon {
+  &__portfolio {
+    bottom: 22%;
+    left: 90%;
+
+    & svg {
+      max-height: 5rem;
+    }
+  }
+
+  &__aboutme {
+    top: 3%;
+    left: 50%;
+
+    & svg {
+      max-height: 6rem;
+    }
+  }
+
+  &__skills {
+    bottom: 22%;
+    left: 10%;
+
+    & svg {
+      max-height: 5.5rem;
+    }
+  }
+
+  &__experience {
+    bottom: 3%;
+    left: 50%;
+
+    & svg {
+      width: 6rem;
+    }
+  }
+
+  &__contact {
+    left: 90%;
+    top: 22%;
+    & svg {
+      max-height: 5rem;
+      @include respond(tab-port) {
+        width: 7rem;
+        max-height: 6rem;
+      }
+    }
+  }
+
+  &__principles {
+    top: 22%;
+    left: 10%;
+  }
+}

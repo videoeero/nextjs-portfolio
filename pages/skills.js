@@ -88,7 +88,7 @@ class skillsPage extends Component {
             <div className='skills'>{skillList}</div>
           </section>
 
-          <section className='exp__section'>
+          <section className='exp__section' id='education'>
             <div className='heading__wrapper'>
               <svg
                 className='heading__icon'
@@ -112,7 +112,7 @@ class skillsPage extends Component {
             <div className='exp'>{showExperience(eduData)}</div>
           </section>
 
-          <section className='exp__section'>
+          <section className='exp__section' name='experience' id='experience'>
             <div className='heading__borders__blue'>
               <div className='heading__wrapper'>
                 <svg
@@ -131,7 +131,7 @@ class skillsPage extends Component {
             <div className='exp'>{showExperience(workData)}</div>
           </section>
 
-          <section className='exp__section'>
+          <section className='exp__section' id='otherexperience'>
             <div className='heading__wrapper'>
               <svg
                 className='heading__icon__large'

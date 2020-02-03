@@ -22,11 +22,15 @@
 
 .icon-bg {
   &__red {
-    fill: url(#icon-gradient-red) $color-dark;
+    fill: url(#icon-gradient-red) $color-red;
   }
 
   &__blue {
-    fill: url(#icon-gradient-blue) $color-dark;
+    fill: url(#icon-gradient-blue) $color-blue;
+  }
+
+  &__green {
+    fill: url(#icon-gradient-green) $color-green;
   }
 }
 
@@ -38,4 +42,9 @@
 #icon-gradient-red {
   --color-1: #c0227e;
   --color-2: #ce5b3f;
+}
+
+#icon-gradient-green {
+  --color-1: #27ee73;
+  --color-2: #2afadf;
 }
