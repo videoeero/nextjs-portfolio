@@ -144,3 +144,12 @@
     }
   }
 }
+
+#otherexperience {
+  svg {
+    height: 10rem;
+    @include respond(phone) {
+      height: 6rem;
+    }
+  }
+}

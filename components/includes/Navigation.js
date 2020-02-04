@@ -1,25 +1,48 @@
 import React, { Component } from 'react';
-// import Link from 'next/link';
-import Link from '../ActiveLink';
+import Link from 'next/link';
+import { withRouter } from 'next/router';
+// import Link from '../ActiveLink';
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    let { pathname } = this.props.router;
+    console.log(pathname);
+    const nonActiveRoute = 'nav__list__item';
+    const activeRoute = 'nav__list__item active';
+
     return (
       <>
         <nav className='nav'>
           <div className='nav__list'>
-            <Link activeClassName='active' href='/'>
-              <a className='nav__list__item'>Who am I?</a>
+            <Link href='/'>
+              <a className={pathname == '/' ? activeRoute : nonActiveRoute}>
+                Who am I?
+              </a>
             </Link>
-            <Link activeClassName='active' href='/skills'>
-              <a className='nav__list__item'>Skills & Experience</a>
+            <Link href='/skills'>
+              <a
+                className={pathname == '/skills' ? activeRoute : nonActiveRoute}
+              >
+                Skills & Experience
+              </a>
             </Link>
-            <Link activeClassName='active' href='/portfolio'>
-              <a className='nav__list__item'>Portfolio</a>
+            <Link href='/portfolio'>
+              <a
+                className={
+                  pathname == '/portfolio' ? activeRoute : nonActiveRoute
+                }
+              >
+                Portfolio
+              </a>
             </Link>
-            <Link activeClassName='active' href='/contact'>
-              <a className='nav__list__item'>Contact</a>
-            </Link>
+
+            <a href='/#contact' className={nonActiveRoute}>
+              Contact
+            </a>
           </div>
         </nav>
       </>
@@ -27,4 +50,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default withRouter(Navigation);

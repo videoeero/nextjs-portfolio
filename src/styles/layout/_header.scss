@@ -48,27 +48,12 @@
     }
   }
 
-  &__buttons {
-    @extend .flex;
-    flex-wrap: wrap;
-    width: 100vw;
-  }
-
   &__titles {
     @extend .heading, .heading__h1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    // height: 6rem;
-    // overflow: hidden;
-
-    // @include respond(tab-port) {
-    //   height: 4.6rem;
-    // }
-    // @include respond(phone) {
-    //   height: 3rem;
-    // }
 
     &__cont {
       height: 6rem;

@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+import IndexWheel from '../components/layouts/IndexWheel';
+import ButtonGradient from '../components/Button';
 import {
-  SvgGradientRed,
-  SvgGradientBlue,
-  SvgGradientGreen
-} from '../components/SvgGradients';
+  SVGpopcorn,
+  SVGresponsive,
+  SVGstars,
+  SVGenjoy
+} from '../components/SVGicons';
 
 class Home extends Component {
   render() {
@@ -12,185 +15,164 @@ class Home extends Component {
       <>
         <section className='me'>
           <div className='me__wrapper__left'>
-            <div className='me__icons'>
-              <Link href='#whoiam'>
-                <a>
-                  <div className='me__icon' id='me__icon__aboutme'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 34.3 46.5'
-                    >
-                      <defs>
-                        <SvgGradientGreen />
-                      </defs>
-                      <path
-                        className='icon-bg__green'
-                        d='M26.2 6.2c0-4.8-8-4.8-8-4.8-.7 0 0-1.4 0-1.4-5.1-.7-6.5 2.7-6.5 2.7-4.4 0-3.6 4.8-3.6 4.8v5.4c0 5 4.1 9.1 9.1 9.1s9.1-4.1 9.1-9.1l-.1-6.7zM17.1 20c-3.9 0-7-3.1-7.1-7l.2-4.7c.8-.8 1.8-1.4 2.9-1.8.7 2.3 10.2 3.8 10.2 3.8.2.1.3.2.5.3 1.3 3.6-.5 7.7-4.1 9-.9.3-1.7.4-2.6.4zm16.2 20.1h-7c-.6 0-1-.4-1-1s.4-1 1-1h6c-.6-6.4-7.1-11.4-15.1-11.4S2.7 31.7 2 38.1h6c.6 0 1 .4 1 1s-.4 1-1 1H1c-.6 0-1-.4-1-1 0-8 7.7-14.4 17.1-14.4s17.1 6.5 17.1 14.4c.1.6-.4 1-.9 1z'
-                      />
-                      <path
-                        className='icon-bg__green'
-                        d='M17.1 31.7c-4.1 0-7.4 3.3-7.4 7.4s3.3 7.4 7.4 7.4 7.4-3.3 7.4-7.4-3.3-7.4-7.4-7.4z'
-                      />
-                      <path
-                        d='M16.2 40.2c0-1.8 1.9-2 1.9-3.2 0-.5-.4-.9-1-.9-.5 0-1.1.1-1.9.6v-1.6c.5-.3 1.2-.6 2-.6 1.4 0 2.6.9 2.6 2.3 0 2.1-2.1 2.3-2.1 3.6v.4h-1.5v-.6zm.8 1.3c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z'
-                        fill='#fff'
-                      />
-                    </svg>
-                    <h3 className='me__icon__heading'>Who am I?</h3>
-                  </div>
-                </a>
-              </Link>
-              <Link href='#whoiam'>
-                <a>
-                  <div className='me__icon' id='me__icon__principles'>
-                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 60'>
-                      <SvgGradientRed />
-                      <path
-                        className='icon-bg__red'
-                        d='M16.4 3.8c.5.3 1.1.2 1.4-.3.3-.5.2-1.1-.3-1.4l-3-2c-.5-.3-1.1-.2-1.4.3-.3.5-.2 1.1.3 1.4l3 2zM16.4 10.2l-3 2c-.5.3-.6.9-.3 1.4.3.5.9.6 1.4.3l3-2c.5-.3.6-.9.3-1.4-.3-.5-.9-.6-1.4-.3zM13 8h4c.6 0 1-.4 1-1s-.4-1-1-1h-4c-.6 0-1 .4-1 1s.4 1 1 1z'
-                      />
-                      <path
-                        className='icon-bg__red'
-                        d='M1 60h40c.6 0 1-.4 1-1 0-.2 0-.3-.1-.5l-13-25.9-3.5-6.9c-.7-1.4-2-2.4-3.5-2.7v-7h15c.6 0 1-.4 1-1 0-.2-.1-.4-.2-.6L34.2 9l3.6-5.4c.3-.5.2-1.1-.3-1.4-.1-.1-.3-.2-.5-.2H22V1c0-.6-.4-1-1-1s-1 .4-1 1v22.1c-1.5.3-2.8 1.3-3.5 2.7L.1 58.6c-.2.5 0 1.1.4 1.3.2.1.3.1.5.1zM35.1 4l-3 4.4c-.2.3-.2.8 0 1.1l3 4.4H22V4h13.1zM20.8 25c.1.1.3.1.4 0 1.1.1 2 .7 2.5 1.6l3 6-3.3 1.4-4.4-1.9c-.1-.1-.3-.1-.4-.1-.1 0-.3 0-.4.1l-3.3 1.4 3.4-6.9c.5-1 1.4-1.6 2.5-1.6zm-7.2 11h.5l4.4-1.8 4.4 1.8c.2.1.5.1.8 0l3.8-1.6L39.4 58H2.6l11-22z'
-                      />
-                      <path
-                        className='icon-bg__red'
-                        d='M15 41c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1s1-.4 1-1v-2c0-.6-.4-1-1-1zM19 44c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1s1-.4 1-1v-2c0-.6-.4-1-1-1z'
-                      />
-                    </svg>
-                    <h3 className='me__icon__heading'>Design principles</h3>
-                  </div>
-                </a>
-              </Link>
-              <Link href='#whoiam'>
-                <a>
-                  <div className='me__icon' id='me__icon__contact'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 90 79.2'
-                    >
-                      <SvgGradientBlue />
-                      <path
-                        className='icon-bg__blue'
-                        d='M47.1 0H23.4C10.5 0 0 10.5 0 23.4v6.3c0 10.1 6.4 19 15.9 22.2l.3.1-.2.3c-1.3 2.2-2.9 5.5-5.2 10.4-.4.8-.2 1.7.4 2.3.4.4.9.6 1.4.6.3 0 .6-.1.8-.2l26.7-12.2h6.8c12.9 0 23.4-10.5 23.4-23.4v-6.3C70.5 10.5 60 0 47.1 0zM17.3 58.6c1.6-3.1 2.8-5.3 3.3-6 .5-.3.9-.9 1-1.5.1-1.1-.6-2.1-1.7-2.2-9.3-1.6-16-9.7-16-19.1v-6.3C4 12.7 12.7 4 23.4 4h23.7c10.7 0 19.4 8.7 19.4 19.4v6.3c0 10.7-8.7 19.4-19.4 19.4h-7.2c-.3 0-.6.1-.8.2L17 59.3l.3-.7z'
-                      />
-                      <path
-                        className='icon-bg__blue'
-                        d='M70.7 14c.6 1.4 1 2.9 1.3 4.5 8.3 2.4 14 9.9 14 18.6v6.3c0 9.4-6.7 17.5-16 19.1-1.1.2-1.8 1.2-1.7 2.2.1.6.4 1.1 1 1.5l.1.1c.6.7 1.8 2.9 3.3 6l.3.7-22-10.1c-.3-.1-.6-.2-.8-.2H43c-4 0-7.8-1.2-11.1-3.6L27.7 61c4.2 3.7 9.7 5.7 15.3 5.7h6.8L76.4 79c.3.1.5.2.8.2.5 0 1.1-.2 1.4-.6.6-.6.8-1.5.4-2.3-2.2-4.8-3.9-8.2-5.2-10.4l-.2-.3.3-.1C83.6 62.3 90 53.4 90 43.3V37c0-11.3-8.1-21-19.3-23zM17.3 22.3c-2.7 0-4.8 2.2-4.8 4.8 0 2.7 2.2 4.8 4.8 4.8s4.8-2.2 4.8-4.8-2.1-4.8-4.8-4.8z'
-                      />
-                      <path
-                        className='icon-bg__blue'
-                        d='M53.2 22.3c-2.7 0-4.8 2.2-4.8 4.8 0 2.7 2.2 4.8 4.8 4.8 2.7 0 4.8-2.2 4.8-4.8s-2.2-4.8-4.8-4.8zM35.2 22.3c-2.7 0-4.8 2.2-4.8 4.8 0 2.7 2.2 4.8 4.8 4.8s4.8-2.2 4.8-4.8c.1-2.7-2.1-4.8-4.8-4.8z'
-                      />
-                    </svg>
-                    <h3 className='me__icon__heading'>Contact me</h3>
-                  </div>
-                </a>
-              </Link>
-              <Link href='/portfolio'>
-                <a>
-                  <div className='me__icon' id='me__icon__portfolio'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 480 480'
-                    >
-                      <SvgGradientRed />
-                      <path
-                        className='icon-bg__red'
-                        d='M13.7 242.3c-3.1-3.1-8.2-3.1-11.3 0C.8 243.8 0 245.9 0 248v224c0 4.4 3.6 8 8 8h224c4.4 0 8-3.6 8-8 0-2.1-.8-4.2-2.3-5.7l-224-224zM16 464V267.3L212.7 464H16z'
-                      />
-                      <path
-                        className='icon-bg__red'
-                        d='M56 432h64c4.4 0 8-3.6 8-8 0-2.1-.8-4.2-2.3-5.7l-64-64c-3.1-3.1-8.2-3.1-11.3 0-1.5 1.5-2.3 3.5-2.3 5.7v64c-.1 4.4 3.5 8 7.9 8zm8-52.7l36.7 36.7H64v-36.7zM88 32h16v16H88zM120 32h16v16h-16zM152 32h16v16h-16zM164.8 144.7c-2.9 1.3-4.8 4.1-4.8 7.3v88c0 3.2 1.9 6 4.8 7.3l72 32c2.1.9 4.4.9 6.5 0l72-32c2.9-1.3 4.7-4.1 4.7-7.3v-88c0-3.2-1.8-6-4.8-7.3l-72-32c-2.1-.9-4.4-.9-6.5 0l-71.9 32zm67.2 115l-56-24.9v-70.5l56 24.9v70.5zm72-24.9l-56 24.9v-70.5l56-24.9v70.5zm-64-106l52.3 23.2-52.3 23.2-52.3-23.2 52.3-23.2zM232 304h16v40h-16zM232 56h16v40h-16zM100.546 135.156l6.896-14.438 33.48 15.99-6.897 14.439zM339.08 136.775l33.48-15.99 6.895 14.439-33.479 15.99zM100.552 264.77l33.476-15.99 6.896 14.437-33.476 15.99z'
-                      />
-                      <path
-                        className='icon-bg__red'
-                        d='M472 368h-48V243.3l47-47c12-12 12-31.4 0-43.3-12-12-31.4-12-43.3 0l-3.7 3.7V88c0-2.1-.8-4.2-2.3-5.7l-80-80C340.2.8 338.1 0 336 0H88C70.3 0 56 14.3 56 32v232h16V32c0-8.8 7.2-16 16-16h240v48c0 17.7 14.3 32 32 32h48v76.7L282.3 298.3c-1.1 1.1-1.9 2.5-2.2 4.1l-8 40c-.9 4.3 1.9 8.5 6.3 9.4 1 .2 2.1.2 3.1 0l40-8c1.5-.3 3-1.1 4.1-2.2l82.3-82.3V368H248c-4.4 0-8 3.6-8 8v24h-40v16h40v24c0 4.4 3.6 8 8 8h224c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zM344 64V27.3L396.7 80H360c-8.8 0-16-7.2-16-16zm-44.7 240L424 179.3l20.7 20.7L320 324.7 299.3 304zm150.1-144c8.1 0 14.6 6.6 14.6 14.6 0 3.9-1.5 7.6-4.3 10.3l-3.7 3.7-20.7-20.6 3.7-3.7c2.8-2.8 6.5-4.3 10.4-4.3zM292.9 320.2l10.9 10.9-13.6 2.7 2.7-13.6zM464 432H256v-48h16v16h16v-16h16v16h16v-16h16v16h16v-16h16v16h16v-16h16v16h16v-16h16v16h16v-16h16v48z'
-                      />
-                    </svg>
-                    <h3 className='me__icon__heading'>Portfolio</h3>
-                  </div>
-                </a>
-              </Link>
-              <Link href='/skill'>
-                <a>
-                  <div className='me__icon' id='me__icon__skills'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 88.6 89.6'
-                    >
-                      <SvgGradientBlue />
-                      <path
-                        className='icon-bg__blue'
-                        d='M88.6 37.1c-.1-.4-.3-.8-.7-1l-13.4-8.7-.8-15.9c0-.8-.8-1.4-1.6-1.4H72l-15.8 2L45.4.5c-.6-.6-1.6-.6-2.1 0l-11 11.6-15.8-2c-.8-.1-1.5.5-1.6 1.3v.1l-.8 15.9L.7 36.2c-.7.4-.9 1.4-.4 2 0 0 0 .1.1.1l8.5 11.3c0 1.1.2 2.2.5 3.3.2 1 .6 2 1 2.9L2 64.2c-.7.7-.7 1.7 0 2.4l22.6 22.6c.7.6 1.7.6 2.4 0l8.9-8.9c.3.1.5.2.8.2 1.7.5 3.5.7 5.3.6 1.3 0 2.5-.2 3.8-.6l12.9 6.6c.2.1.4.2.7.2.2 0 .3 0 .5-.1.4-.1.7-.4.8-.8l6.2-14.7 15.5-3.6c.8-.2 1.3-1 1.1-1.8v-.1L78.7 51l9.6-12.7c.2-.4.3-.8.3-1.2zM43.3 62.6c-3.7-.1-6.8-3-7.2-6.7l22.1-22 6.9 6.9-21.8 21.8zm23.8-19c2.8 4.8 2.1 10.9-1.7 15L52.1 71.9c-3.5-.3-6.3-3.1-6.7-6.7l21.7-21.6zM40 47.3c-.3-3.4-2.5-6.4-5.6-7.7l14.7-14.8 6.7 6.7L40 47.3zm-9-9.1l-9.5-3.9 9.8-9.7c4.1-3.9 10.2-4.6 15.1-1.7L31 38.2zm1.9 4.4c2.9 1.7 3.8 5.4 2.1 8.2-1.3 2.3-4 3.4-6.6 2.8L12.2 47c.3-2.4 1.4-4.6 3-6.4.1-.2 3.7-3.8 3.7-3.8l14 5.8zM36 76.8c-.6-.3-1.4-.1-1.8.4l-8.4 8.4L8.9 68.7l-3.4-3.4 4.4-4.4 3.6-3.6c.5-.5.6-1.3.3-2-.5-1-1-2-1.3-3.1l-.3-1.5 14.9 6.1c1.8.7 3.8.9 5.7.4.8 4.6 4.6 8.2 9.2 8.8.5 4.1 3.3 7.5 7.1 8.8-1.1 1-2.5 1.8-3.9 2.3-1.1.4-2.3.6-3.5.7-1.9.1-3.8-.3-5.7-1zm39.9-27c-.3.4-.4.9-.2 1.3l4.4 14.5L65.4 69c-.5.1-.8.4-1 .9l-5.9 13.9-9.4-4.8c1.1-.6 2.1-1.4 3-2.3L67.8 61c6.1-6.2 5.9-16.4-.6-22.9L51.9 22.8c-6.5-6.5-16.8-6.8-22.9-.6L13.2 37.9c-2 2-3.4 4.5-4.1 7.3l-5.6-7.4 12.7-8.2c.4-.3.6-.7.6-1.2l.8-15.1 15 1.8c.5.1.9-.1 1.3-.5l10.4-11 10.3 11c.3.3.8.5 1.3.5l15-1.8.8 15.1c0 .5.3.9.7 1.2L85 37.7l-9.1 12.1z'
-                      />
-                    </svg>
-                    <h3 className='me__icon__heading'>Skills</h3>
-                  </div>
-                </a>
-              </Link>
-              <a href='/skills#experience'>
-                <div className='me__icon' id='me__icon__experience'>
-                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 90'>
-                    <SvgGradientGreen />
-                    <path
-                      className='icon-bg__green'
-                      d='M33.4 69.4c.7.3 1.3.5 1.9.5.9 0 1.7-.4 2.3-1 .5-.5.9-1.5.7-3.1l-.7-4.3 3.2-3.1c1.1-1.1 1.5-2.4 1.1-3.6-.4-1.2-1.5-2-3-2.2l-4.4-.6-2-3.9c-.7-1.4-1.8-2.2-3-2.2-1.3 0-2.4.8-3 2.2l-2 3.9-4.4.6c-1.5.2-2.6 1-3 2.2-.4 1.2 0 2.5 1.1 3.6l3.2 3.1-.7 4.3c-.3 1.5.2 2.5.7 3.1 1 1.1 2.6 1.4 4.2.5l3.9-2 3.9 2zm-8.6-4.1l.9-5.2-3.8-3.7 5.2-.8 2.3-4.7 2.3 4.7 5.2.8-3.8 3.7.9 5.2-4.7-2.4-4.5 2.4zM18.8 42l-.6-3.8 2.6-2.7c1-1 1.4-2.3 1-3.4-.4-1.1-1.4-1.9-2.8-2.1l-3.6-.5-1.5-3.5c-.9-1.9-2.3-2.1-2.9-2.1-.6 0-2 .2-2.9 2.1l-1.6 3.4-3.6.6c-1.4.2-2.4 1-2.8 2.1-.4 1.1 0 2.4 1 3.4l2.6 2.7-.5 3.8c-.2 1.5.2 2.4.7 2.9.9 1.1 2.5 1.3 4 .5l3.2-1.8 3.2 1.8c.6.3 1.2.5 1.8.5.9 0 1.6-.3 2.2-1 .3-.5.8-1.4.5-2.9zm-4.9-5.2l.7 4.3-3.6-2-3.6 2 .7-4.3L5 33.7l4.2-.6 1.8-3.8 1.8 3.8 4.2.6-3.1 3.1zM107.9 52.7l-4.4-.6-2-3.9c-.7-1.4-1.8-2.2-3-2.2-1.3 0-2.4.8-3 2.2l-2 3.9-4.4.6c-1.5.2-2.6 1-3 2.2-.4 1.2 0 2.5 1.1 3.6l3.2 3.1-.7 4.3c-.3 1.5.2 2.5.7 3.1 1 1.1 2.6 1.4 4.2.5l3.9-2 3.9 2c.7.3 1.3.5 1.9.5.9 0 1.7-.4 2.3-1 .5-.5.9-1.5.7-3.1l-.7-4.3 3.2-3.1c1.1-1.1 1.5-2.4 1.1-3.6-.4-1.2-1.5-2-3-2.2zm-5.6 7.4l.9 5.2-4.7-2.4-4.7 2.4.9-5.2-3.8-3.7 5.2-.8 2.3-4.7 2.3 4.7 5.2.8-3.6 3.7zM127.9 32.1c-.4-1.1-1.4-1.9-2.8-2.1l-3.6-.5-1.6-3.4c-.9-1.9-2.3-2.1-2.9-2.1-.6 0-2 .2-2.9 2.1l-1.6 3.4-3.6.5c-1.4.2-2.4 1-2.8 2.1-.4 1.1 0 2.4 1 3.4l2.6 2.7-.6 3.8c-.2 1.5.2 2.4.7 2.9.9 1.1 2.5 1.3 4 .5l3.2-1.8 3.2 1.8c.6.3 1.2.5 1.8.5.9 0 1.6-.3 2.2-1 .4-.5.9-1.4.7-2.9l-.6-3.8 2.6-2.7c1-1 1.3-2.3 1-3.4zm-8 4.7l.7 4.3-3.6-2-3.6 2 .7-4.3-3.1-3.1 4.2-.6 1.8-3.8 1.8 3.8 4.2.6-3.1 3.1zM64 34.9c9.4 0 17-7.6 17-17S73.4.9 64 .9s-17 7.6-17 17 7.6 17 17 17zm0-30c7.2 0 13 5.8 13 13s-5.8 13-13 13-13-5.8-13-13c0-7.1 5.8-13 13-13zM75.2 77.2l5.3-5.4c1.4-1.4 1.9-3 1.4-4.5-.6-1.3-1.9-2.3-3.8-2.6l-7.2-1.1-3.2-6.9c-1.2-2.5-3-2.8-3.7-2.8-.7 0-2.5.3-3.7 2.8l-3.2 6.9-7.2 1.1c-1.9.3-3.2 1.3-3.7 2.7-.5 1.4 0 3.1 1.4 4.5l5.3 5.4-1.2 7.6c-.3 2 .3 3.3.8 3.9 1.2 1.4 3.2 1.6 5.2.5l6.4-3.5 6.4 3.5c.9.5 1.7.7 2.5.7 1.1 0 2-.4 2.7-1.2.6-.7 1.2-1.9.8-3.9l-1.3-7.7zm-2.7 8.3v.3c-.1 0-.1-.1-.2-.1L64 81.1l-8.3 4.6c-.1 0-.1.1-.2.1v-.3l1.6-9.6-6.7-6.9-.3-.3c.1 0 .2 0 .3-.1l9.3-1.4 4.1-8.8c0-.1.1-.1.1-.2 0 .1.1.1.1.2l4.1 8.8 9.3 1.4c.1 0 .2 0 .3.1l-.3.3-6.7 6.8 1.8 9.7zM36.8 47.6c1.1-1.9 2.3-3.6 3.8-5.1 3.2-3.3 7.4-5.5 12.5-6.7-1.4-.9-2.7-1.9-3.9-3.1C42.3 35 37.5 39 34.3 43.9c.7.7 1.3 1.5 1.8 2.4l.7 1.3zM33.2 74.8c-.7 0-1.2-.5-1.2-1v-.6c-.2-.1-.3-.1-.5-.2l-2.1-1.1-1.4.8V74c.1 2.7 2.4 4.9 5.2 4.9h15.3v-.2l-3.7-3.8H33.2zM74.7 35.9c5 1.3 9.1 3.5 12.3 6.7 1.5 1.5 2.8 3.3 4 5.4l.9-1.7c.4-.8.9-1.5 1.5-2.1-3.2-4.9-7.9-9-14.7-11.3-1.2 1.2-2.5 2.2-4 3zM96.4 73c-.2.1-.3.1-.5.2v.7c0 .4-.5.9-1.2.9H83.2l-3.7 3.8v.2h15.3c2.7 0 5.1-2.2 5.2-4.9v-1.3l-1.5-.8-2.1 1.2z'
-                    />
-                  </svg>
-                  <h3 className='me__icon__heading'>Experience</h3>
-                </div>
-              </a>
-            </div>
-
-            <div className='me__img'></div>
+            <IndexWheel />
           </div>
           <div className='me__wrapper__right'>
             <h2 className='heading__h2'>Hello!</h2>
             <p className='me__paragraph'>
-              And thanks for your interest in my web page. I hope you find what
+              And thanks for your interest in my website. I hope you find what
               you are looking for!
             </p>
             <p className='paragraph__italic'>Best regards</p>
             <p className='paragraph__italic'>Eero</p>
           </div>
         </section>
-        <section className='about' id='whoiam'>
+        <section className='about' id='whoami'>
           <h2 className='heading__h2'>Who am I?</h2>
           <p className='paragraph paragraph__italic'>
             Half Coder, half Designer, extended from Teacher class component
           </p>
+          <div className='me__wrapper'>
+            <div className='me__img__profile__wrapper'>
+              <div className='me__img__profile'>&nbsp;</div>
+            </div>
 
-          <p className='paragraph'>
-            So I'm Eero, living in Turku, the original capital of Finland. I'm a
-            computer science guy with infinite eagerness to learn more. I'm a
-            mixture of your friendly neighborhood programmer, a designer
-            pursuing to create both functional and nice to look at end results
-            and a teacher, who does his best to share good practices among
-            co-workers and learners.
+            <p className='paragraph'>
+              So I'm Eero, living in Turku, the original capital of Finland. I'm
+              a computer science guy with infinite eagerness to learn more. I'm
+              a mixture of your friendly neighborhood programmer, a designer
+              pursuing to create both functional and nice to look at end results
+              and a teacher, who does his best to share good practices among
+              co-workers and learners.
+            </p>
+            {/* <p className='paragraph'>
+              I'm currently focused on combination of front-end development and
+              UI/UX design, but I'm not afraid of learning more on back-end too,
+              if given chance on interesting project! Other buzzwords I'd like
+              to / will learn more about are data analytics and machine
+              learning. Visually engaging statistic & big data applications
+              makes inspecting numbers so much more fun.
+            </p> */}
+            <p className='paragraph'>
+              What else I do? Well being a fan boy of Star Wars, Marvel, DC,
+              Monty Python... (list goes on) takes it's time. As a contrast to
+              smashing keyboard, I'll try to smash weights in the gym (gently
+              enough, I'm not a crossfitter). Videogames from C64 and NES to
+              this date have influenced greatly on my imagination. Disclaimer:
+              Consoles are cool but there can be only one PC master race.
+            </p>
+            <p className='paragraph'>
+              For more details about things I have done so far, check out
+              <Link href='/skills'>
+                <a className='paragraph__link'> Skills & Experience</a>
+              </Link>{' '}
+              page or
+              <Link href='/skills'>
+                <a className='paragraph__link'> Portfolio</a>
+              </Link>{' '}
+              for some of my favorite projects. Please feel free to
+              <a href='#contact' className='paragraph__link'>
+                &nbsp;contact me
+              </a>
+              , if you are interested in working with me!
+            </p>
+          </div>
+          <div className='me__buttons'>
+            <Link href='/skills'>
+              <a className='button'>
+                <ButtonGradient title={'Skills & Experience'} />
+              </a>
+            </Link>
+            <Link href='/portfolio'>
+              <a className='button'>
+                <ButtonGradient title={'Portfolio'} />
+              </a>
+            </Link>
+            <Link href='#contact'>
+              <a className='button'>
+                <ButtonGradient title={'Contact me'} />
+              </a>
+            </Link>
+          </div>
+        </section>
+        <section className='about' id='principles'>
+          <h2 className='heading__h2'>My Design Principles</h2>
+          <p className='paragraph paragraph__italic'>
+            There's usually more than just one superb solution, but avoiding the
+            bad ones isn't rocket science.
           </p>
+
+          <div className='principle__wrapper'>
+            <div className='principle__item__shadow'>
+              <div className='principle__shape'></div>
+              <div className='principle__item' id='enjoy'>
+                <div className='principle__svg'>
+                  <SVGpopcorn color={'red'} />
+                </div>
+                <h3 className='principle__title'>Enjoyable</h3>
+                <h3 className='principle__title heading__color'>Experience</h3>
+                <p className='principle__text'>
+                  The mandatory stuff: Fast load times, optimized assets, lag
+                  free interaction. But these doesn't unable creating intuitive
+                  and fun user experience!
+                </p>
+              </div>
+            </div>
+            <div className='principle__item__shadow'>
+              <div className='principle__item' id='meaninful'>
+                <div className='principle__svg'>
+                  <SVGenjoy color={'green'} />
+                </div>
+                <h3 className='principle__title'>Meaningful</h3>
+                <h3 className='principle__title heading__color'>Content</h3>
+                <p className='principle__text'>
+                  Making search engines happy like this pear here isn't that
+                  hard, but accessible and relevant content for a human is
+                  another thing. This has to be kept in mind from the very
+                  beginning of development process.
+                </p>
+              </div>
+            </div>
+            <div className='principle__item__shadow'>
+              <div className='principle__item' id='responsive'>
+                <div className='principle__svg'>
+                  <SVGresponsive color={'blue'} />
+                </div>
+                <h3 className='principle__title'>Think</h3>
+                <h3 className='principle__title heading__color'>
+                  Responsively
+                </h3>
+                <p className='principle__text'>
+                  Mobile devices with various screen sizes are not going
+                  anywhere, but bad mobile experience is frustrating. Making the
+                  experience smooth on every device saves nerves!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section name='contact' className='about' id='contact'>
+          <h2 className='heading__h2'>Contact me</h2>
           <p className='paragraph'>
-            For more details about things I have done, check out
-            <Link href='/skills'>
-              <a className='paragraph__link'> Skills & Experience</a>
-            </Link>{' '}
-            page or
-            <Link href='/skills'>
-              <a className='paragraph__link'> Portfolio</a>
-            </Link>{' '}
-            for some of my favorite projects. Please feel free to
-            <a href='mailto:eero.suvanto@gmail.com' className='paragraph__link'>
-              &nbsp;contact me
+            To reach me out most easily, you can send me a message on
+            <a
+              href='mailto:eero.suvanto@gmail.com'
+              target='_blank'
+              className='paragraph__link'
+            >
+              &nbsp;LinkedIn.
+            </a>{' '}
+            &nbsp; Or
+            <a
+              href='mailto:eero.suvanto@gmail.com'
+              target='_blank'
+              rel='noopener'
+              className='paragraph__link'
+            >
+              &nbsp;good-old email&nbsp;
             </a>
-            , if you are interested in working with me!
+            also does the trick!
           </p>
-
-          <a className='button' href='#'>
-            <div className='button__bg__red'>Nappula</div>
-            <div className='button__bg__blue'>Nappula</div>
-
-            <p className='button__title'>Nappula</p>
-          </a>
         </section>
       </>
     );

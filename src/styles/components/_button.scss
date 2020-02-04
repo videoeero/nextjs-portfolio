@@ -1,5 +1,5 @@
 .button {
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
   border-radius: 5px;
   margin: 1rem;
   transition: all 0.3s;
@@ -7,13 +7,16 @@
   font-size: $default-font-size;
   text-align: center;
   display: inline-block;
-  // overflow: hidden;
-  min-width: 20rem;
+
   position: relative;
   background-color: $color-blue;
   background-image: $gradient-blue;
   color: $color-platinum !important;
   min-width: 20rem;
+
+  @include respond(phone) {
+    margin: 1rem;
+  }
 
   &__title {
     color: $color-platinum !important;

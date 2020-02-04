@@ -7,6 +7,15 @@
     flex-direction: column;
   }
   &__wrapper {
+    // @extend .flex, .flex__column;
+    width: 85rem;
+    max-width: 90vw;
+
+    & .paragraph {
+      width: initial;
+      max-width: initial;
+    }
+
     &__left {
       position: relative;
       height: 45rem;
@@ -33,8 +42,16 @@
         margin: 0.5rem 0;
       }
     }
+  }
 
-    // border: 2px solid $color-green;
+  &__buttons {
+    @extend .flex;
+    flex-wrap: wrap;
+    width: 80rem;
+    max-width: 95vw;
+
+    & .button {
+    }
   }
 
   &__paragraph {
@@ -51,7 +68,7 @@
   &__icon {
     @extend .flex, .flex__column;
     width: 8rem;
-    height: 10rem;
+    // height: 10rem;
     position: absolute;
     text-align: center;
     color: $color-dark;
@@ -65,11 +82,18 @@
 
     &:hover {
       & svg {
+        filter: brightness(0.5);
         transform: scale(1.08);
       }
 
-      & h3 {
-        border-bottom: 2px solid $color-dark;
+      & .red {
+        color: $color-red;
+      }
+      & .green {
+        color: $color-green;
+      }
+      & .blue {
+        color: $color-blue;
       }
     }
 
@@ -89,23 +113,12 @@
 
   &__img {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 20rem;
     height: 20rem;
     background-size: cover;
     background-position: center;
     background-image: url('/img/eero.jpg');
     transition: all 0.5s;
-    transform-origin: left;
-    cursor: pointer;
-    filter: grayscale(1);
-
-    &:hover {
-      filter: grayscale(0);
-    }
 
     @include respond(tab-port) {
       width: 17rem;
@@ -116,9 +129,52 @@
       height: 15rem;
     }
 
-    &:active {
-      filter: grayscale(0);
+    &__wrapper {
+      transition: all 0.3s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      filter: drop-shadow(0px -2px 5px rgba($color-black, 0.4)) grayscale(1);
+
+      &:hover {
+        filter: drop-shadow(0px -2px 8px rgba($color-black, 0.4)) grayscale(0);
+      }
+    }
+
+    &__profile {
+      width: 25rem;
+      height: 30rem;
+      border-radius: 5px;
+      clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+      float: left;
+      margin: 2rem 2rem 1rem 3rem;
+      background-size: cover;
+      background-position: center;
       background-image: url('/img/eero2.jpg');
+      transition: all 0.3s;
+
+      shape-outside: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+
+      @include respond(tab-port) {
+        margin: 2rem 2rem 1rem 1.5rem;
+      }
+
+      @include respond(phone) {
+        margin: 0 auto;
+        float: none;
+        height: 25rem;
+        clip-path: circle(50% at 50% 50%);
+      }
+
+      &:hover {
+        background-image: url('/img/eero3.jpg');
+      }
+
+      &__wrapper {
+        filter: drop-shadow(1px 1px 3px rgba($color-black, 0.4));
+      }
     }
   }
 }
@@ -175,5 +231,8 @@
   &__principles {
     top: 22%;
     left: 10%;
+    & svg {
+      height: 5.5rem;
+    }
   }
 }

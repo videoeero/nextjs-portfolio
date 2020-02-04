@@ -1,0 +1,89 @@
+.principle {
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  &__shape {
+    background-color: red;
+    width: 26rem;
+    height: 30rem;
+    float: right;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    shape-outside: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+  }
+
+  &__item {
+    // @extend .flex, .flex__column;
+    height: 100%;
+    width: 26rem;
+    padding: 2rem 4rem;
+    background-color: #f0f0f0;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &__shadow {
+      filter: drop-shadow(1px 1px 7px rgba($color-black, 0.2));
+
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        filter: drop-shadow(1px 1px 15px rgba($color-black, 0.1));
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    &:first-of-type {
+      margin-top: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+    &:nth-of-type(2) {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__svg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 9rem;
+    height: 8rem;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+  }
+}
+
+#enjoy {
+  & svg {
+    height: 120%;
+  }
+}
+
+#meaninful {
+  .heading__color {
+    background-image: $gradient-green;
+  }
+}
+
+#responsive {
+  .heading__color {
+    background-image: $gradient-blue;
+  }
+}
