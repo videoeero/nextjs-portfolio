@@ -7,3 +7,15 @@
     flex-direction: column;
   }
 }
+
+.red-bg {
+  background-image: $gradient-red;
+}
+
+.green-bg {
+  background-image: $gradient-green;
+}
+
+.blue-bg {
+  background-image: $gradient-blue;
+}

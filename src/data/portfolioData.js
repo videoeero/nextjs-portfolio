@@ -60,7 +60,7 @@ export default [
     slug: 'ville',
     url: 'https://oppimisanalytiikka.fi/2019/ville',
     summary:
-      'Designing, developing and creating content to ViLLE learning platform',
+      'Designing, developing and creating content for ViLLE learning platform',
     description:
       "ViLLE is a gamified educational learning platform developed by The Centre for Learning Analytics in University of Turku. It is used in over 1/3 of Finnish schools from preschools to universities. Studies show that using ViLLE as part of the education improves greatly student performance and accuracy. My role in development of ViLLE has been developing and designing learning materials for both teachers and students. I've also been part of designing the user experience and assisting software developers with styling solutions. Even though ViLLE is a research funded, non-commercial platform, there's something been done right as number of users has been exponentially rising for previous few years. Currently there are more than 10 000 teacher and more than 300 000 student accounts created in ViLLE.",
     image: 'img/learninganalytics.jpg',
@@ -81,7 +81,7 @@ export default [
     url: 'https://oppimisanalytiikka.fi',
     summary: 'Project to practice ReactJS',
     description:
-      'This app is a practice project from a great Udemy course about ReactJS. With this single page app user can create new color palettes or use the template ones. Even though React Hooks and Redux are the modern way of doing things, I felt like needing more old school practice on passing props to components and handling state changes. So this project got my hands dirty on that and also thought me some nice tools like dynamic CSS styling and page transitions between routes.',
+      'This app is a practice project from a great Udemy course about ReactJS. With this single page app user can create new color palettes or use the template ones. Even though React Hooks and Redux are the modern way of doing things, I felt like needing more old school practice on passing props to components and handling state changes. So this project got my hands dirty on that and also taught me some nice tools like dynamic CSS styling and page transitions between routes.',
     image: 'img/learninganalytics.jpg',
     resources: [
       {

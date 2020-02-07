@@ -10,16 +10,11 @@ export default class Skill extends Component {
       <>
         <div
           className={activeSkillClass}
-          onClick={() => this.props.handleClick(this.props.index)}
+          // onClick={() => this.props.handleClick(this.props.index)}
         >
           <div className='skills__text'>
             <h3 className='heading__h3'>{skill.title}</h3>
-            <p className='skills__text__paragraph'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              optio corporis nesciunt magnam quod ratione aliquid, dignissimos,
-              voluptas obcaecati soluta repudiandae nisi repellat ut asperiores
-              voluptatibus eum aut magni laudantium.
-            </p>
+            <p className='skills__text__paragraph'>{skill.text}</p>
           </div>
           <div className='skills__wrapper'>
             <p className='skills__title'>{skill.title}</p>
@@ -30,13 +25,17 @@ export default class Skill extends Component {
               >
                 <div
                   className='skills__bar__inner'
-                  style={{ width: `${skill.level * 10}%` }}
+                  // style={{ width: `${skill.level * 10}%` }}
                 >
                   &nbsp;
                 </div>
               </div>
+              <div
+                className='skills__bar__right'
+                style={{ width: `${100 - skill.level}%` }}
+              ></div>
             </div>
-            <p className='skills__level'>{skill.level}0%</p>
+            <p className='skills__level'>{skill.level}%</p>
           </div>
         </div>
       </>

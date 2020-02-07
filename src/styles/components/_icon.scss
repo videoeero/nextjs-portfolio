@@ -10,6 +10,10 @@
   &__green {
     fill: url(#icon-gradient-green) $color-green;
   }
+
+  &__light {
+    fill: url(#icon-gradient-light) $color-light;
+  }
 }
 
 #icon-gradient-blue {
@@ -23,6 +27,13 @@
 }
 
 #icon-gradient-green {
-  --color-1: #27ee73;
-  --color-2: #2afadf;
+  // --color-1: #27ee73;
+  // --color-2: #2afadf;
+  --color-1: #17aa61;
+  --color-2: #28e4ab;
+}
+
+#icon-gradient-light {
+  --color-1: #fdfdfd;
+  --color-2: #e9e7ee;
 }

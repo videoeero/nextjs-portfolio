@@ -3,9 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 4rem;
-  @include respond(tab-port) {
-    flex-direction: column;
-  }
+  max-width: 90vw;
+  margin: 0 auto;
+  // @include respond(tab-port) {
+  //   flex-direction: column;
+  // }
   &__wrapper {
     // @extend .flex, .flex__column;
     width: 85rem;
@@ -170,6 +172,9 @@
 
       &:hover {
         background-image: url('/img/eero3.jpg');
+      }
+      &:active {
+        background-image: url('/img/eero4.jpg');
       }
 
       &__wrapper {

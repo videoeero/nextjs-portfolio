@@ -29,8 +29,8 @@ class MainLayout extends Component {
           />
         </Head>
         <div className='mainLayout_container'>
-          <Navigation />
           <Header />
+          <Navigation />
           <PageTransition timeout={300} classNames='page-transition'>
             {React.cloneElement(children, {
               key: router.pathname

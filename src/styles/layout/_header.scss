@@ -1,5 +1,4 @@
 .header {
-  // @extend .flex;
   position: relative;
   min-height: 40vh;
   background-color: $color-gunmetal;
@@ -10,6 +9,10 @@
     $color-dark
   );
   width: 100vw;
+
+  @include respond(tab-port) {
+    min-height: 30vh;
+  }
 
   &__wrapper {
     position: absolute;

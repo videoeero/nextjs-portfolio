@@ -9,7 +9,7 @@
     position: relative;
     transition: all 0.4s;
     border-radius: 3px;
-    cursor: pointer;
+    // cursor: pointer;
 
     &.active {
       & .skills__text {
@@ -37,9 +37,17 @@
     max-width: 95vw;
 
     &:hover {
-      background-color: $color-blue;
-      color: $color-platinum;
-      padding: 0.5rem;
+      // background-image: $gradient-blue;
+      // color: $color-platinum;
+      // padding: 0.5rem;
+
+      // & .skills__bar__inner {
+      //   background-color: $color-platinum;
+      //   background-image: none;
+      // }
+      // & .skills__bar__right {
+      //   background-color: $color-gunmetal;
+      // }
     }
   }
 
@@ -76,8 +84,18 @@
     }
 
     &__inner {
-      background-color: $color-cyan;
-      transition: all 0.3s;
+      // background-color: $color-cyan;
+      background-image: $gradient-blue;
+      transition: all 0.3s ease;
+    }
+
+    &__right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: $color-platinum;
+      transition: all 0.3s ease;
     }
   }
 
@@ -119,6 +137,7 @@
   &__section {
     width: 60rem;
     max-width: 95vw;
+    min-height: 45rem;
   }
 
   &__title {

@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import LinkWithHash from '../LinkWithHash';
+import checkUrl from '../checkUrl';
 import {
   SVGwhoami,
   SVGprinciples,
@@ -10,10 +12,14 @@ import {
 } from '../SVGicons';
 
 export default function IndexWheel() {
+  const handleClick = (url, pathname) => {
+    checkUrl(url, pathname);
+  };
+
   return (
     <>
       <div className='me__icons'>
-        <Link href='#whoiam'>
+        <Link href='#whoami'>
           <a>
             <div className='me__icon' id='me__icon__aboutme'>
               <SVGwhoami color={'green'} />
@@ -21,7 +27,7 @@ export default function IndexWheel() {
             </div>
           </a>
         </Link>
-        <Link href='#whoiam'>
+        <Link href='#principles'>
           <a>
             <div className='me__icon' id='me__icon__principles'>
               <SVGprinciples color={'red'} />
@@ -29,7 +35,7 @@ export default function IndexWheel() {
             </div>
           </a>
         </Link>
-        <Link href='#whoiam'>
+        <Link href='#contact'>
           <a>
             <div className='me__icon' id='me__icon__contact'>
               <SVGcontact color={'blue'} />
@@ -45,7 +51,7 @@ export default function IndexWheel() {
             </div>
           </a>
         </Link>
-        <Link href='/skill'>
+        <Link href='/skills'>
           <a>
             <div className='me__icon' id='me__icon__skills'>
               <SVGskill color={'blue'} />
@@ -53,12 +59,14 @@ export default function IndexWheel() {
             </div>
           </a>
         </Link>
-        <a href='/skills#experience'>
-          <div className='me__icon' id='me__icon__experience'>
-            <SVGexperience color={'green'} />
-            <h3 className='me__icon__heading green'>Experience</h3>
-          </div>
-        </a>
+        <LinkWithHash href='/skills#experience'>
+          <a onClick={() => handleClick('/skills#experience', '/skills')}>
+            <div className='me__icon' id='me__icon__experience'>
+              <SVGexperience color={'green'} />
+              <h3 className='me__icon__heading green'>Experience</h3>
+            </div>
+          </a>
+        </LinkWithHash>
       </div>
       <Link href='#whoami'>
         <a className='me__img__wrapper'>

@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import IndexWheel from '../components/layouts/IndexWheel';
 import ButtonGradient from '../components/Button';
-import {
-  SVGpopcorn,
-  SVGresponsive,
-  SVGstars,
-  SVGenjoy
-} from '../components/SVGicons';
+import PrincipleItem from '../components/PrincipleItem';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <>
-        <section className='me'>
+        <section className='me' id='me'>
           <div className='me__wrapper__left'>
             <IndexWheel />
           </div>
@@ -27,7 +26,7 @@ class Home extends Component {
             <p className='paragraph__italic'>Eero</p>
           </div>
         </section>
-        <section className='about' id='whoami'>
+        <section className='about' name='whoami' id='whoami'>
           <h2 className='heading__h2'>Who am I?</h2>
           <p className='paragraph paragraph__italic'>
             Half Coder, half Designer, extended from Teacher class component
@@ -45,21 +44,14 @@ class Home extends Component {
               and a teacher, who does his best to share good practices among
               co-workers and learners.
             </p>
-            {/* <p className='paragraph'>
-              I'm currently focused on combination of front-end development and
-              UI/UX design, but I'm not afraid of learning more on back-end too,
-              if given chance on interesting project! Other buzzwords I'd like
-              to / will learn more about are data analytics and machine
-              learning. Visually engaging statistic & big data applications
-              makes inspecting numbers so much more fun.
-            </p> */}
             <p className='paragraph'>
               What else I do? Well being a fan boy of Star Wars, Marvel, DC,
               Monty Python... (list goes on) takes it's time. As a contrast to
               smashing keyboard, I'll try to smash weights in the gym (gently
               enough, I'm not a crossfitter). Videogames from C64 and NES to
-              this date have influenced greatly on my imagination. Disclaimer:
-              Consoles are cool but there can be only one PC master race.
+              this date have influenced greatly on my creativity and
+              imagination. Disclaimer: Consoles are cool but there can be only
+              one PC master race.
             </p>
             <p className='paragraph'>
               For more details about things I have done so far, check out
@@ -103,76 +95,31 @@ class Home extends Component {
           </p>
 
           <div className='principle__wrapper'>
-            <div className='principle__item__shadow'>
-              <div className='principle__shape'></div>
-              <div className='principle__item' id='enjoy'>
-                <div className='principle__svg'>
-                  <SVGpopcorn color={'red'} />
-                </div>
-                <h3 className='principle__title'>Enjoyable</h3>
-                <h3 className='principle__title heading__color'>Experience</h3>
-                <p className='principle__text'>
-                  The mandatory stuff: Fast load times, optimized assets, lag
-                  free interaction. But these doesn't unable creating intuitive
-                  and fun user experience!
-                </p>
-              </div>
-            </div>
-            <div className='principle__item__shadow'>
-              <div className='principle__item' id='meaninful'>
-                <div className='principle__svg'>
-                  <SVGenjoy color={'green'} />
-                </div>
-                <h3 className='principle__title'>Meaningful</h3>
-                <h3 className='principle__title heading__color'>Content</h3>
-                <p className='principle__text'>
-                  Making search engines happy like this pear here isn't that
-                  hard, but accessible and relevant content for a human is
-                  another thing. This has to be kept in mind from the very
-                  beginning of development process.
-                </p>
-              </div>
-            </div>
-            <div className='principle__item__shadow'>
-              <div className='principle__item' id='responsive'>
-                <div className='principle__svg'>
-                  <SVGresponsive color={'blue'} />
-                </div>
-                <h3 className='principle__title'>Think</h3>
-                <h3 className='principle__title heading__color'>
-                  Responsively
-                </h3>
-                <p className='principle__text'>
-                  Mobile devices with various screen sizes are not going
-                  anywhere, but bad mobile experience is frustrating. Making the
-                  experience smooth on every device saves nerves!
-                </p>
-              </div>
-            </div>
+            <PrincipleItem />
           </div>
         </section>
-        <section name='contact' className='about' id='contact'>
+        <section name='contact' className='about contact' id='contact'>
           <h2 className='heading__h2'>Contact me</h2>
-          <p className='paragraph'>
+          <p className='paragraph paragraph__centered'>
             To reach me out most easily, you can send me a message on
             <a
-              href='mailto:eero.suvanto@gmail.com'
-              target='_blank'
-              className='paragraph__link'
-            >
-              &nbsp;LinkedIn.
-            </a>{' '}
-            &nbsp; Or
-            <a
-              href='mailto:eero.suvanto@gmail.com'
+              href='https://www.linkedin.com/in/eero-suvanto-739362147/'
               target='_blank'
               rel='noopener'
               className='paragraph__link'
             >
-              &nbsp;good-old email&nbsp;
-            </a>
-            also does the trick!
+              &nbsp;LinkedIn.
+            </a>{' '}
+            For alternatives, check out the footer in the end of each page.
           </p>
+          <a
+            href='https://www.linkedin.com/in/eero-suvanto-739362147/'
+            target='_blank'
+            rel='noopener'
+            className='button'
+          >
+            <ButtonGradient title={'LinkedIn'} />
+          </a>
         </section>
       </>
     );
