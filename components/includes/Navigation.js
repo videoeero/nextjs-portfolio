@@ -17,18 +17,6 @@ class Navigation extends Component {
     checkUrl(url, pathname);
   }
 
-  // checkUrl(url) {
-  //   const hash = url.split('#')[1];
-
-  //   setTimeout(function() {
-  //     const anchor = document.getElementsByName(hash);
-
-  //     console.log('juu!!!');
-  //     const offSet = anchor[0].offsetTop - 20;
-  //     window.scrollTo(0, offSet);
-  //   }, 400);
-  // }
-
   render() {
     let { pathname } = this.props.router;
     const nonActiveRoute = 'nav__list__item';
@@ -40,18 +28,49 @@ class Navigation extends Component {
           <div className='nav__list'>
             <LinkWithHash href='/#whoami'>
               <a
-                className={pathname == '/' ? activeRoute : nonActiveRoute}
+                className={
+                  pathname == '/'
+                    ? `${activeRoute} desktop`
+                    : `${nonActiveRoute} desktop`
+                }
                 onClick={() => this.handleClick('#whoami', pathname)}
               >
                 Who am I?
               </a>
             </LinkWithHash>
+            <LinkWithHash href='/#whoami'>
+              <a
+                className={
+                  pathname == '/'
+                    ? `${activeRoute} mobile`
+                    : `${nonActiveRoute} mobile`
+                }
+                onClick={() => this.handleClick('#whoami', pathname)}
+              >
+                Who?
+              </a>
+            </LinkWithHash>
 
             <Link href='/skills'>
               <a
-                className={pathname == '/skills' ? activeRoute : nonActiveRoute}
+                className={
+                  pathname == '/skills'
+                    ? `${activeRoute} desktop`
+                    : `${nonActiveRoute} desktop`
+                }
               >
                 Skills & Experience
+              </a>
+            </Link>
+            <Link href='/skills'>
+              <a
+                className={
+                  pathname == '/skills'
+                    ? `${activeRoute} mobile`
+                    : `${nonActiveRoute} mobile`
+                }
+              >
+                Skills
               </a>
             </Link>
             <Link href='/portfolio'>

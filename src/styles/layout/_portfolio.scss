@@ -3,7 +3,33 @@
   width: 100vw;
   &__item {
     @extend .flex, .flex__column;
-    margin-bottom: 4rem;
+    padding: 3rem 0;
+    width: 100vw;
+
+    &:nth-of-type(2n) {
+      background-color: #eeeeee;
+      & .portfolio {
+        &__paragraph {
+          background-color: #eeeeee;
+        }
+
+        &__fog {
+          background-image: linear-gradient(
+            to bottom,
+            rgba(#eeeeee, 0),
+            rgba(#eeeeee, 1) 100%
+          );
+
+          @include respond(phone) {
+            background-image: linear-gradient(
+              to bottom,
+              rgba(#eeeeee, 0),
+              rgba(#eeeeee, 1) 60%
+            );
+          }
+        }
+      }
+    }
   }
 
   &__title {

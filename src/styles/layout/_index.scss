@@ -117,8 +117,8 @@
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     width: 20rem;
     height: 20rem;
-    background-size: cover;
-    background-position: center;
+    background-size: 150%;
+    background-position: 50% 10%;
     background-image: url('/img/eero.jpg');
     transition: all 0.5s;
 
@@ -164,10 +164,15 @@
       }
 
       @include respond(phone) {
-        margin: 0 auto;
+        margin: 1rem auto 2rem auto;
         float: none;
         height: 25rem;
         clip-path: circle(50% at 50% 50%);
+      }
+
+      @include respond(small-phone) {
+        height: 18rem;
+        width: 18rem;
       }
 
       &:hover {

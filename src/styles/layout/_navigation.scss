@@ -50,6 +50,18 @@
           width: 100%;
         }
       }
+
+      &.desktop {
+        @include respond(phone) {
+          display: none;
+        }
+      }
+      &.mobile {
+        display: none;
+        @include respond(phone) {
+          display: initial;
+        }
+      }
     }
   }
 }
