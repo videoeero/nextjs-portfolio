@@ -63,7 +63,7 @@ export default [
       'Designing, developing and creating content for ViLLE learning platform',
     description:
       "ViLLE is a gamified educational learning platform developed by The Centre for Learning Analytics in University of Turku. It is used in over 1/3 of Finnish schools from preschools to universities. Studies show that using ViLLE as part of the education improves greatly student performance and accuracy. My role in development of ViLLE has been developing and designing learning materials for both teachers and students. I've also been part of designing the user experience and assisting software developers with styling solutions. Even though ViLLE is a research funded, non-commercial platform, there's something been done right as number of users has been exponentially rising for previous few years. Currently there are more than 10 000 teacher and more than 300 000 student accounts created in ViLLE.",
-    image: 'img/learninganalytics.jpg',
+    image: 'img/ville.jpg',
     resources: [
       {
         title: 'Website (Finnish)',
@@ -78,15 +78,15 @@ export default [
   {
     title: 'Color Palette App',
     slug: 'colorpalette',
-    url: 'https://oppimisanalytiikka.fi',
+    url: 'https://color-palette-videoeero.netlify.com/',
     summary: 'Project to practice ReactJS',
     description:
       'This app is a practice project from a great Udemy course about ReactJS. With this single page app user can create new color palettes or use the template ones. Even though React Hooks and Redux are the modern way of doing things, I felt like needing more old school practice on passing props to components and handling state changes. So this project got my hands dirty on that and also taught me some nice tools like dynamic CSS styling and page transitions between routes.',
-    image: 'img/learninganalytics.jpg',
+    image: 'img/color-palette.jpg',
     resources: [
       {
         title: 'The app',
-        url: 'https://oppimisanalytiikka.fi'
+        url: 'https://color-palette-videoeero.netlify.com/'
       },
       {
         title: 'Course on Udemy',
@@ -97,15 +97,15 @@ export default [
   {
     title: 'Natours',
     slug: 'natours',
-    url: 'https://oppimisanalytiikka.fi',
+    url: 'https://natours-videoeero.herokuapp.com/',
     summary: 'Project to practice NodeJS, MongoDB and Pug templates',
     description:
       'Natours is a practice project from an Udemy course. The course quite thoroughly teaches good practices in creating RESTful API and an NodeJS/Express application with safe user and database management. Even though my interests are more on a front-end side of things, I wanted to understand back-end development better and this was a nice way to learn that, as the end result is visually nice to look at.',
-    image: 'img/learninganalytics.jpg',
+    image: 'img/natours.jpg',
     resources: [
       {
         title: 'The app',
-        url: 'https://oppimisanalytiikka.fi'
+        url: 'https://natours-videoeero.herokuapp.com/'
       },
       {
         title: 'Course on Udemy',
