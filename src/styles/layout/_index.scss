@@ -153,7 +153,6 @@
       &__wrapper {
         position: relative;
         display: inline-block;
-        float: left;
         width: 25rem;
         height: 30rem;
         float: left;
@@ -194,7 +193,6 @@
         @include respond(phone) {
           display: block;
           margin: 1rem auto 2rem auto;
-          float: none;
           height: 25rem;
 
           text-align: center;

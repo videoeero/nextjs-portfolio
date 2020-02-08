@@ -110,7 +110,6 @@
 
     &__back {
       @extend .principle__item__inner, .flex__column;
-      background-color: $color-light;
       transform: rotateY(180deg);
       padding: 3rem;
       text-align: justify;

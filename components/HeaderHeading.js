@@ -14,7 +14,7 @@ class HeaderHeading extends Component {
     if (pathname == targetRoute || pathname == targetRoute2) {
       checkClassName = `header__wrapper__${color} active`;
     } else {
-      checkClassName = `header__wrapper__${color}`;
+      checkClassName = `header__wrapper__${color} hidden`;
     }
 
     return (
