@@ -1,8 +1,6 @@
 export default function checkUrl(url, pathname) {
   if (!(pathname == '/' && (url == '#contact' || url == '#whoami'))) {
     const hash = url.split('#')[1];
-    console.log(hash);
-    console.log(pathname);
 
     setTimeout(function() {
       const anchor = document.getElementsByName(hash);

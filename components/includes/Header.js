@@ -5,10 +5,51 @@ import { withRouter } from 'next/router';
 class Header extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      bgImage: [
+        'none',
+        'none',
+        'linear-gradient(to right,#0b0b16,#2d3142,#0b0b16)'
+      ]
+    };
+  }
+
+  componentDidMount() {
+    const { pathname } = this.props.router;
+    let bgState = '';
+    if (pathname == '/') {
+      bgState = [
+        'none',
+        'none',
+        'linear-gradient(to right,#0b0b16,#2d3142,#0b0b16)'
+      ];
+    } else if (pathname == '/skills') {
+      bgState = [
+        'none',
+        'linear-gradient(to right,#0b0b16,#2d3142,#0b0b16)',
+        'none'
+      ];
+    } else if (pathname == '/portfolio') {
+      bgState = [
+        'linear-gradient(to right,#0b0b16,#2d3142,#0b0b16)',
+        'none',
+        'none'
+      ];
+    }
+    console.log(bgState);
+    this.setBackground(bgState);
+  }
+
+  setBackground(bgState) {
+    this.setState(state => ({
+      bgImage: bgState
+    }));
   }
 
   render() {
     const { pathname } = this.props.router;
+    const { bgImage } = this.state;
     const indexText = ["I'm a", 'web developer', 'web designer', 'teacher'];
     const skillsText = ["Here's some of my", 'skills', 'perks', 'stats'];
     const portfolioText = [
@@ -22,23 +63,25 @@ class Header extends Component {
       <>
         <header className='header'>
           <HeaderHeading
-            color={'red'}
+            color={'green'}
             pathname={pathname}
-            texts={indexText}
-            targetRoute={'/'}
-            targetRoute2={'/about'}
+            texts={portfolioText}
+            targetRoute={'/portfolio'}
+            bgImage={bgImage[0]}
           />
           <HeaderHeading
             color={'blue'}
             pathname={pathname}
             texts={skillsText}
             targetRoute={'/skills'}
+            bgImage={bgImage[1]}
           />
           <HeaderHeading
-            color={'green'}
+            color={'red'}
             pathname={pathname}
-            texts={portfolioText}
-            targetRoute={'/portfolio'}
+            texts={indexText}
+            targetRoute={'/'}
+            bgImage={bgImage[2]}
           />
         </header>
       </>
