@@ -112,24 +112,11 @@
       border-bottom: 2px solid transparent;
     }
   }
-  &__img__2 {
-    width: 30rem;
-    height: 30rem;
-    clip-path: url(#hexagon);
-  }
 
   &__img {
-    // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    // clip-path: url(#hexagon);
-    // overflow: hidden;
-    // width: 20rem;
-    // height: 20rem;
-    // background-size: 150%;
-    // background-size: contain;
-    // background-position: 50% 10%;
-    // // background-color: red;
-    // background-image: url('/img/eero.jpg');
-    // transition: all 0.5s;
+    width: 20rem;
+    height: 20rem;
+    transition: all 0.5s;
 
     @include respond(tab-port) {
       width: 17rem;
@@ -155,51 +142,80 @@
     }
 
     &__profile {
-      width: 25rem;
-      height: 30rem;
-      border-radius: 5px;
-      clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
-      float: left;
-      margin: 2rem 2rem 1rem 3rem;
-      background-size: cover;
-      background-position: center;
-      background-image: url('/img/eero2.jpg');
-      transition: all 0.3s;
-
+      position: absolute;
+      transition: opacity 0.3s;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       shape-outside: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 
-      @include respond(tab-port) {
-        margin: 2rem 2rem 1rem 1.5rem;
-      }
-
-      @include respond(phone) {
-        margin: 1rem auto 2rem auto;
-        float: none;
-        height: 25rem;
-        clip-path: circle(50% at 50% 50%);
-      }
-
-      @include respond(small-phone) {
-        height: 18rem;
-        width: 18rem;
-      }
-
-      &:hover {
-        background-image: url('/img/eero3.jpg');
-      }
-      &:active {
-        background-image: url('/img/eero4.jpg');
-      }
-
       &__wrapper {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 25rem;
+        height: 30rem;
+        float: left;
+        margin: 2rem 2rem 1rem 3rem;
+        shape-outside: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
         filter: drop-shadow(1px 1px 3px rgba($color-black, 0.4));
+
+        & #eero_mobile {
+          display: none;
+        }
+
+        & #eero3,
+        & #eero4 {
+          opacity: 0;
+        }
+
+        &:hover {
+          & #eero2 {
+            opacity: 0;
+          }
+          & #eero3 {
+            opacity: 1;
+          }
+        }
+        &:active {
+          & #eero3 {
+            opacity: 0;
+          }
+          & #eero4 {
+            opacity: 1;
+          }
+        }
+
+        @include respond(tab-port) {
+          margin: 2rem 2rem 1rem 1.5rem;
+        }
+
+        @include respond(phone) {
+          display: block;
+          margin: 1rem auto 2rem auto;
+          float: none;
+          height: 25rem;
+
+          text-align: center;
+          & #eero_mobile {
+            display: initial;
+          }
+
+          & #eero2,
+          & #eero3,
+          & #eero4 {
+            display: none;
+          }
+        }
+
+        @include respond(small-phone) {
+          height: 18rem;
+          width: 18rem;
+        }
       }
     }
   }
-}
-
-.svg-clipped {
-  clip-path: url(#hexagon);
 }
 
 #me__icon {

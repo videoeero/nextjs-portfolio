@@ -33,7 +33,30 @@ class Home extends Component {
           </p>
           <div className='me__wrapper'>
             <div className='me__img__profile__wrapper'>
-              <div className='me__img__profile'>&nbsp;</div>
+              <img
+                src='/img/eero2.png'
+                alt='Happy Eero'
+                className='me__img__profile'
+                id='eero2'
+              />
+              <img
+                src='/img/eero3.png'
+                alt='Adventure Eero'
+                className='me__img__profile'
+                id='eero3'
+              />
+              <img
+                src='/img/eero4.png'
+                alt='Fanboy Eero'
+                className='me__img__profile'
+                id='eero4'
+              />
+              <img
+                src='/img/eero_mobile.png'
+                alt='Happy Eero'
+                className='me__img__profile'
+                id='eero_mobile'
+              />
             </div>
 
             <p className='paragraph'>
