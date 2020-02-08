@@ -24,8 +24,7 @@
     transform: translate(-50%, -50%);
 
     &.current {
-      animation: hideBgImage 1s ease 3s 1 forwards;
-      // animation: showSkills 3s ease-in-out 0s 1 forwards
+      animation: hideBgImage 4s ease 0s 1 forwards;
     }
   }
 

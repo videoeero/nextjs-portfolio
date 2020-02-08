@@ -5,14 +5,17 @@
 
 @keyframes hideBgImage {
   0% {
+    z-index: 9;
     background-image: linear-gradient(to right, #0b0b16, #2d3142, #0b0b16);
   }
 
   90% {
+    z-index: 9;
     background-image: linear-gradient(to right, #0b0b16, #2d3142, #0b0b16);
   }
 
   100% {
+    z-index: initial;
     background-image: none;
   }
 }
