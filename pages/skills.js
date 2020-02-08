@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 import Skill from '../components/Skill';
 import skills from '../src/data/skillsData';
 import workData from '../src/data/workData';
@@ -68,6 +69,10 @@ class skillsPage extends Component {
 
     return (
       <>
+        <Head>
+          <meta property='og:url' content='https://findeero.now.sh/skills' />
+        </Head>
+
         <div className='exp__main'>
           <section className='exp__section' id='#skills'>
             <div className='heading__wrapper'>

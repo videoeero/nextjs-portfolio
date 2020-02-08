@@ -1,0 +1,8 @@
+﻿# humanstxt.org/
+
+# TEAM
+	Eero Suvanto -- developer -- eero.suvanto [at] gmail.com
+
+# THANKS
+	Matti Koivula, Joonas Salovaara & Sanna Launiainen -- Photos of me
+    

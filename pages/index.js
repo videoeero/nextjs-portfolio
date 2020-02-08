@@ -3,6 +3,7 @@ import Link from 'next/link';
 import IndexWheel from '../components/layouts/IndexWheel';
 import ButtonGradient from '../components/Button';
 import PrincipleItem from '../components/PrincipleItem';
+import Head from 'next/head';
 
 class Home extends Component {
   constructor(props) {
@@ -12,6 +13,17 @@ class Home extends Component {
   render() {
     return (
       <>
+        <Head>
+          <meta property='og:url' content='https://findeero.now.sh' />
+          <meta
+            property='og:description'
+            content='Portfolio / CV website of Eero Suvanto, Web & Edutech Developer'
+          />
+          <meta
+            name='description'
+            content='Portfolio / CV website of Eero Suvanto, Web & Edutech Developer'
+          />
+        </Head>
         <section className='me' id='me'>
           <div className='me__wrapper__left'>
             <IndexWheel />

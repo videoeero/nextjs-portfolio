@@ -5,8 +5,8 @@ export default [
     level: 'Advanced'
   },
   { title: 'ReactJS', percentage: 75, level: 'Comfortable' },
-  { title: 'Typescript', percentage: 60, level: 'Comfortable' },
   { title: 'NodeJS', percentage: 70, level: 'Comfortable' },
+  { title: 'Typescript', percentage: 60, level: 'Intermediate' },
   { title: 'MongoDB, PostgreSQL', percentage: 60, level: 'Intermediate' },
   { title: 'Git', percentage: 60, level: 'Intermediate' },
   { title: 'Adobe CC', percentage: 90, level: 'Advanced' },

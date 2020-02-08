@@ -17,7 +17,9 @@
 
   &__list {
     @extend .flex;
+
     font-size: $default-font-size;
+    position: relative;
 
     &__item {
       padding: 1rem;
@@ -61,6 +63,35 @@
         @include respond(phone) {
           display: initial;
         }
+      }
+    }
+    @include respond(phone) {
+      margin-right: 2rem;
+      justify-content: flex-end;
+    }
+    @include respond(small-phone) {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+
+    margin-left: 1rem;
+    // margin-right: auto;
+    &__svg {
+      width: 3rem;
+      & path,
+      & circle {
+        transition: all 0.3s;
+      }
+
+      &:hover path {
+        fill: $color-red;
+      }
+      &:hover circle {
+        stroke: $color-red;
       }
     }
   }
