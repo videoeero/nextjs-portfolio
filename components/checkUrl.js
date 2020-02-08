@@ -11,6 +11,6 @@ export default function checkUrl(url, pathname) {
       const offSet = anchor[0].offsetTop + header[0].offsetHeight - 30;
 
       window.scrollTo(0, offSet);
-    }, 400);
+    }, 600);
   }
 }

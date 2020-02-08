@@ -32,10 +32,13 @@ export default class Skill extends Component {
               </div>
               <div
                 className='skills__bar__right'
-                style={{ width: `${100 - skill.level}%` }}
+                style={{ width: `${100 - skill.percentage}%` }}
               ></div>
             </div>
-            <p className='skills__level'>{skill.level}%</p>
+            <div className='skills__level'>
+              <p>{skill.percentage}%</p>
+              <p className='paragraph__italic'>{skill.level}</p>
+            </div>
           </div>
         </div>
       </>

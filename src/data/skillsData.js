@@ -1,16 +1,16 @@
 export default [
   {
     title: 'HTML, CSS/SASS, Vanilla JS',
-    level: 90,
-    text: ''
+    percentage: 90,
+    level: 'Advanced'
   },
-  { title: 'ReactJS', level: 75 },
-  { title: 'Typescript', level: 60 },
-  { title: 'NodeJS', level: 70 },
-  { title: 'MongoDB, PostgreSQL', level: 60 },
-  { title: 'Git', level: 60 },
-  { title: 'Adobe CC', level: 90 },
-  { title: 'UI / UX design', level: 85 },
-  { title: 'Social skills', level: 90 },
-  { title: 'Playing videogames', level: 100 }
+  { title: 'ReactJS', percentage: 75, level: 'Comfortable' },
+  { title: 'Typescript', percentage: 60, level: 'Comfortable' },
+  { title: 'NodeJS', percentage: 70, level: 'Comfortable' },
+  { title: 'MongoDB, PostgreSQL', percentage: 60, level: 'Intermediate' },
+  { title: 'Git', percentage: 60, level: 'Intermediate' },
+  { title: 'Adobe CC', percentage: 90, level: 'Advanced' },
+  { title: 'UI / UX design', percentage: 85, level: 'Advanced' },
+  { title: 'Social skills', percentage: 90, level: 'Advanced' },
+  { title: 'Playing videogames', percentage: 100, level: 'Mastery' }
 ];

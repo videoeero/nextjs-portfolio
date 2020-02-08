@@ -70,9 +70,8 @@ export default function IndexWheel() {
       </div>
       <Link href='#whoami'>
         <a className='me__img__wrapper'>
-          {/* <div className='me__img'>&nbsp;</div> */}
           <img
-            class='me__img'
+            className='me__img'
             src='/img/eero.png'
             alt='This is me - Eero'
           ></img>

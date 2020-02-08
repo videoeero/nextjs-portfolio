@@ -4,11 +4,29 @@ class HeaderHeading extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = { displayHeader: 'none' };
+
+    this.setDisplay = this.setDisplay.bind(this);
+  }
+
+  componentDidMount() {
+    const { color, pathname } = this.props;
+    console.log(color, pathname);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.pathname !== prevProps.pathname) {
+      this.setDisplay();
+    }
+  }
+
+  setDisplay() {
+    this.setState({ displayHeader: 'initial' });
   }
 
   render() {
     const { color, pathname, texts, targetRoute, targetRoute2 } = this.props;
+    const { displayHeader } = this.state;
     let checkClassName = '';
 
     if (pathname == targetRoute || pathname == targetRoute2) {
@@ -19,6 +37,11 @@ class HeaderHeading extends Component {
 
     return (
       <div className={checkClassName}>
+        <style jsx>{`
+          .header__wrapper__${color}.hidden {
+            display: ${displayHeader};
+          }
+        `}</style>
         <h1 className='heading__h1'>
           Hello, I'm <span className='heading__color'>Eero Suvanto</span>.
         </h1>

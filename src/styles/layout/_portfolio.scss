@@ -144,6 +144,7 @@
   }
 
   &__button {
+    @extend .flex;
     background-color: transparent;
     color: $color-green;
     padding: 1rem;
@@ -151,11 +152,14 @@
     position: absolute;
     right: 0;
     top: 0;
+    width: 7rem;
+    height: 7rem;
 
     @include respond(phone) {
       right: 50%;
       bottom: 0;
-      transform: translate(50%, 30%);
+      top: initial;
+      transform: translate(50%, 0);
     }
 
     &__icon {
