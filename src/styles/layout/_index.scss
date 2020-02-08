@@ -112,15 +112,24 @@
       border-bottom: 2px solid transparent;
     }
   }
+  &__img__2 {
+    width: 30rem;
+    height: 30rem;
+    clip-path: url(#hexagon);
+  }
 
   &__img {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    width: 20rem;
-    height: 20rem;
-    background-size: 150%;
-    background-position: 50% 10%;
-    background-image: url('/img/eero.jpg');
-    transition: all 0.5s;
+    // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    // clip-path: url(#hexagon);
+    // overflow: hidden;
+    // width: 20rem;
+    // height: 20rem;
+    // background-size: 150%;
+    // background-size: contain;
+    // background-position: 50% 10%;
+    // // background-color: red;
+    // background-image: url('/img/eero.jpg');
+    // transition: all 0.5s;
 
     @include respond(tab-port) {
       width: 17rem;
@@ -187,6 +196,10 @@
       }
     }
   }
+}
+
+.svg-clipped {
+  clip-path: url(#hexagon);
 }
 
 #me__icon {
