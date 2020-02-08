@@ -21,6 +21,7 @@
   "homepage": "https://github.com/videoeero/nextjs-portfolio#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^9.7.4",
     "next": "^9.2.1",
     "next-page-transitions": "^1.0.0-beta.2",
     "node-sass": "^4.13.1",
@@ -29,5 +30,11 @@
     "react-transition-group": "^4.3.0",
     "react-uuid": "^1.0.2",
     "sass": "^1.25.1-test.1"
-  }
+  },
+  "browserslist": [
+    "last 5 versions",
+    "> 1%",
+    "Firefox ESR",
+    "not ie < 9"
+  ]
 }
