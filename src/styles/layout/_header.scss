@@ -24,6 +24,7 @@
     transform: translate(-50%, -50%);
 
     &.current {
+      z-index: 9;
       animation: hideBgImage 4s ease 0s 1 forwards;
     }
   }
