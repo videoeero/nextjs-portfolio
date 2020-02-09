@@ -49,6 +49,7 @@ class portfolio extends Component {
                 target='_blank'
                 rel='noopener'
                 style={{ backgroundImage: `url(${image})` }}
+                title={title}
               >
                 &nbsp;
               </a>
