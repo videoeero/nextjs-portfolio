@@ -14,6 +14,10 @@
     min-height: 30vh;
   }
 
+  @include respond(phone) {
+    min-height: 22rem;
+  }
+
   &__bg {
     @include flex;
     width: 100vw;
@@ -22,6 +26,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      top: 60%;
+      height: 80%;
+    }
 
     &.current {
       z-index: 9;
@@ -80,9 +89,11 @@
           flex-direction: column;
         }
       }
-      & .rollTitles .heading__color {
-        @include respond(phone-500) {
-          margin-left: 0;
+      & .rollTitles {
+        .heading__color {
+          @include respond(phone-500) {
+            margin-left: 0;
+          }
         }
         & span {
           @include respond(phone-500) {

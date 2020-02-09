@@ -51,13 +51,18 @@ class Navigation extends Component {
             </a>
           </Link>
           <div className='nav__list'>
-            <LinkWithHash href='/#whoami'>
+            <Link href='/'>
               <a
                 className={
-                  pathname == '/'
-                    ? `${activeRoute} desktop`
-                    : `${nonActiveRoute} desktop`
+                  pathname == '/' ? `${activeRoute}` : `${nonActiveRoute}`
                 }
+              >
+                Home
+              </a>
+            </Link>
+            <LinkWithHash href='/#whoami'>
+              <a
+                className='nav__list__item desktop'
                 onClick={() => this.handleClick('#whoami', pathname)}
               >
                 Who am I?

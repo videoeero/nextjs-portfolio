@@ -29,12 +29,12 @@ class Home extends Component {
             <IndexWheel />
           </div>
           <div className='me__wrapper__right'>
-            <h2 className='heading__h2'>Hello!</h2>
+            <h2 className='heading__h2'>Hey You!</h2>
             <p className='me__paragraph'>
-              And thanks for your interest in my website. I hope you find what
-              you are looking for!
+              And thank your for your interest in my website. I hope you find
+              what you are looking for!
             </p>
-            <p className='paragraph__italic'>Best regards</p>
+            <p className='paragraph__italic'>Best regards,</p>
             <p className='paragraph__italic'>Eero</p>
           </div>
         </section>
@@ -63,18 +63,18 @@ class Home extends Component {
                 className='me__img__profile'
                 id='eero4'
               />
-              <img
+              {/* <img
                 src='/img/eero_mobile.png'
                 alt='Happy Eero'
                 className='me__img__profile'
                 id='eero_mobile'
-              />
+              /> */}
             </div>
 
             <p className='paragraph'>
               So I'm Eero, living in Turku, the original capital of Finland. I'm
               a computer science guy with infinite eagerness to learn more. I'm
-              a mixture of your friendly neighborhood programmer, a designer
+              a mixture of your friendly neighborhood developer, a designer
               pursuing to create both functional and nice to look at end results
               and a teacher, who does his best to share good practices among
               co-workers and learners.

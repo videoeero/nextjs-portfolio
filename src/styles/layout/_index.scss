@@ -3,13 +3,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 4rem;
-  max-width: 90vw;
+  max-width: 95vw;
   margin: 0 auto;
-  // @include respond(tab-port) {
-  //   flex-direction: column;
-  // }
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
   &__wrapper {
-    // @include flex__column;
     width: 85rem;
     max-width: 90vw;
 
@@ -30,12 +29,18 @@
     }
 
     &__right {
-      margin: 2rem 6rem;
+      margin: 2rem 0 2rem 6rem;
       max-width: 40rem;
 
       @include respond(tab-port) {
-        margin: 2rem 4rem;
+        margin: 2rem 0 2rem 4rem;
         max-width: 30rem;
+      }
+      @include respond(phone) {
+        margin: 0;
+        & h2 {
+          display: none;
+        }
       }
 
       & .paragraph__italic {
@@ -188,28 +193,36 @@
         }
 
         @include respond(phone) {
-          shape-outside: initial;
-          display: block;
-          float: none;
-          margin: 1rem auto 2rem auto;
-          height: 25rem;
+          margin: 2rem 1.5rem 1rem 1.5rem;
+          // shape-outside: initial;
+          // display: block;
+          // float: none;
+          // margin: 1rem auto 2rem auto;
+          // height: 25rem;
+          width: 17.5rem;
+          height: 21rem;
 
-          text-align: center;
-          & #eero_mobile {
-            display: initial;
-          }
+          // text-align: center;
+          // & #eero_mobile {
+          //   display: initial;
+          // }
 
-          & #eero2,
-          & #eero3,
-          & #eero4 {
-            display: none;
-          }
+          // & #eero2,
+          // & #eero3,
+          // & #eero4 {
+          //   // display: none;
+          // }
         }
-
         @include respond(small-phone) {
-          height: 18rem;
-          width: 18rem;
+          // height: 18rem;
+          // width: 18rem;
+          width: 13rem;
+          height: 15.6rem;
         }
+        // @include respond(small-phone) {
+        //   height: 18rem;
+        //   width: 18rem;
+        // }
       }
     }
   }

@@ -37,7 +37,6 @@ class Header extends Component {
         'none'
       ];
     }
-    console.log(bgState);
     this.setBackground(bgState);
   }
 
