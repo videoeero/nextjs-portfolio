@@ -31,11 +31,14 @@ class HeaderHeading extends Component {
             }
           `}</style> */}
           <h1 className='heading__h1'>
-            Hello, I'm <span className='heading__color'>Eero Suvanto</span>.
+            Hello, I'm
+            <span>
+              <span className='heading__color'>Eero Suvanto</span>.
+            </span>
           </h1>
 
           <div className='header__titles'>
-            <span>{texts[0]}&nbsp;</span>
+            <span>{texts[0]}</span>
             <div className='header__titles__cont'>
               <div className='rollTitles'>
                 <span className='header__title'>{texts[1]}</span>
