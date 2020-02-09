@@ -7,16 +7,17 @@ export default [
       'Designing and producing company website, videos and other media. Training teachers to use learning analytics based learning platform to enhance their teaching.'
   },
   {
-    year: '2017 –',
+    year: '2016 –',
     employer: 'Freelancer',
     title: 'Web Developer',
     description: 'Creating websites and various IT solutions for clients.',
     shortDesc: true
   },
   {
-    year: '2016 –',
+    year: '2014 –',
     employer: 'University of Turku',
-    title: 'Web Developer, Research Coordinator',
+    title: 'Web Developer, Research Coordinator (2017 –)',
+    title2: 'Designer, Research Assistant (2014 – 2017)',
     description:
       "Working at The Centre for Learning Analytics in faculty of Faculty of Science and Engineering. Developing and designing an analytics based learning platform, coordinating projects and assisting in department's education."
   },

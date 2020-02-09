@@ -84,6 +84,12 @@ li {
     letter-spacing: 1px;
   }
 
+  &__h4 {
+    @include heading;
+    margin-top: 1rem;
+    font-size: $default-font-size;
+  }
+
   &__wrapper {
     @include flex;
     max-width: 60rem;

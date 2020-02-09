@@ -49,15 +49,14 @@ class skillsPage extends Component {
 
     const showExperience = array =>
       array.map((work, index) => {
-        const { year, employer, title, description, shortDesc } = work;
+        const { year, employer, title, title2, description, shortDesc } = work;
 
         return (
           <div key={`exp${index}`} className='exp__item'>
             <p className='exp__year'>{year}</p>
-            <h3 className='heading__h3'>
-              {employer} / {title}
-            </h3>
-
+            <h3 className='heading__h3'>{employer}</h3>
+            <h4 className='heading__h4'>{title}</h4>
+            {title2 ? <h4 className='heading__h4'>{title2}</h4> : ''}
             {shortDesc ? (
               <p className='paragraph paragraph__centered'>{description}</p>
             ) : (

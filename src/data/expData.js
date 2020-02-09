@@ -16,7 +16,7 @@ export default [
   {
     year: '2018',
     employer: 'Asteriski ry',
-    title: 'Website/media/marketing guy for ATK-YTP 2018',
+    title: 'Website & media guy for ATK-YTP 2018',
     description:
       "ATK-YTP is an annual CS students' seminar event and Turku was the host in 2018. For more details, see the portfolio page!"
   },

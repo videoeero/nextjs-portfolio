@@ -69,7 +69,10 @@ export default function IndexWheel() {
           </a>
         </Link>
         <LinkWithHash href='/skills#experience'>
-          <a onClick={() => handleClick('/skills#experience', '/skills')}>
+          <a
+            onClick={() => handleClick('/skills#experience', '/skills')}
+            title='Experience'
+          >
             <div className='me__icon' id='me__icon__experience'>
               <h3 className='me__icon__heading green'>Experience</h3>
               <SVGexperience
@@ -84,7 +87,7 @@ export default function IndexWheel() {
         <a className='me__img__wrapper'>
           <img
             className='me__img'
-            src='/img/eero.png'
+            src='/img/eero.webp'
             alt='Picture of me - Eero'
           ></img>
         </a>
