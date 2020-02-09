@@ -25,7 +25,7 @@
   &__bg {
     &__blue,
     &__red {
-      @extend .flex;
+      @include flex;
       position: absolute;
       top: 0;
       left: 0;
@@ -48,10 +48,6 @@
 
     & .button__bg__blue {
       opacity: 0;
-    }
-
-    & .button__bg__green {
-      // opacity: 1;
     }
   }
 }

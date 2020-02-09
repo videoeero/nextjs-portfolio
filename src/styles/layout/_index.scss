@@ -1,5 +1,5 @@
 .me {
-  @extend .flex;
+  @include flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 4rem;
@@ -9,7 +9,7 @@
   //   flex-direction: column;
   // }
   &__wrapper {
-    // @extend .flex, .flex__column;
+    // @include flex__column;
     width: 85rem;
     max-width: 90vw;
 
@@ -47,13 +47,10 @@
   }
 
   &__buttons {
-    @extend .flex;
+    @include flex;
     flex-wrap: wrap;
     width: 80rem;
     max-width: 95vw;
-
-    & .button {
-    }
   }
 
   &__paragraph {
@@ -68,7 +65,7 @@
   }
 
   &__icon {
-    @extend .flex, .flex__column;
+    @include flex__column;
     width: 8rem;
     // height: 10rem;
     position: absolute;

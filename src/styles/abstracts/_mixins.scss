@@ -26,6 +26,12 @@
   flex-direction: column;
 }
 
+@mixin heading {
+  text-align: center;
+  display: inline-block;
+  color: $color-gunmetal;
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 350px:      Small-Phone

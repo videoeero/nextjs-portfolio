@@ -35,20 +35,6 @@
     margin: 0.5rem;
     border-radius: 3px;
     max-width: 95vw;
-
-    &:hover {
-      // background-image: $gradient-blue;
-      // color: $color-platinum;
-      // padding: 0.5rem;
-
-      // & .skills__bar__inner {
-      //   background-color: $color-platinum;
-      //   background-image: none;
-      // }
-      // & .skills__bar__right {
-      //   background-color: $color-gunmetal;
-      // }
-    }
   }
 
   &__title {
@@ -121,7 +107,7 @@
   }
 
   &__text {
-    @extend .flex, .flex__column;
+    @include flex__column;
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -157,7 +143,7 @@
   }
 
   &__title {
-    @extend .flex, .flex__column;
+    @include flex__column;
     width: 100%;
   }
 
@@ -169,7 +155,7 @@
   }
 
   &__item {
-    @extend .flex, .flex__column;
+    @include flex__column;
     width: 55rem;
     max-width: 90vw;
     margin-bottom: 3rem;

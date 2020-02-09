@@ -26,7 +26,7 @@ li {
   }
 
   &__h1 {
-    @extend .heading;
+    @include heading;
     width: 100%;
     text-transform: uppercase;
     font-size: 5rem;
@@ -60,7 +60,7 @@ li {
   }
 
   &__h2 {
-    @extend .heading;
+    @include heading;
     font-size: 4.5rem;
     letter-spacing: 2px;
     font-family: 'Arvo', serif;
@@ -78,14 +78,14 @@ li {
   }
 
   &__h3 {
-    @extend .heading;
+    @include heading;
     text-transform: initial;
     font-size: 2rem;
     letter-spacing: 1px;
   }
 
   &__wrapper {
-    @extend .flex;
+    @include flex;
     max-width: 60rem;
     margin-bottom: 2rem;
 
@@ -116,14 +116,6 @@ li {
         height: 4rem;
         margin-right: 1rem;
       }
-
-      // &__large {
-      //   @extend .heading__icon;
-      //   height: 10rem;
-      //   @include respond(phone) {
-      //     height: 6rem;
-      //   }
-      // }
     }
   }
 }

@@ -1,5 +1,5 @@
 .nav {
-  @extend .flex;
+  @include flex;
   z-index: 100;
   width: 100vw;
   // background-color: rgba($color-black, 0.7);
@@ -16,7 +16,7 @@
   ) !important;
 
   &__list {
-    @extend .flex;
+    @include flex;
 
     font-size: $default-font-size;
     position: relative;

@@ -1,8 +1,8 @@
 .portfolio {
-  @extend .flex, .flex__column;
+  @include flex__column;
   width: 100vw;
   &__item {
-    @extend .flex, .flex__column;
+    @include flex__column;
     padding: 3rem 0;
     width: 100vw;
 
@@ -72,7 +72,7 @@
     }
 
     &__text {
-      @extend .flex, .flex__column;
+      @include flex__column;
       margin: 1rem 0;
       position: relative;
     }
@@ -144,7 +144,7 @@
   }
 
   &__button {
-    @extend .flex;
+    @include flex;
     background-color: transparent;
     color: $color-green;
     padding: 1rem;
