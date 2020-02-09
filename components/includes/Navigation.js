@@ -70,11 +70,7 @@ class Navigation extends Component {
             </LinkWithHash>
             <LinkWithHash href='/#whoami'>
               <a
-                className={
-                  pathname == '/'
-                    ? `${activeRoute} mobile`
-                    : `${nonActiveRoute} mobile`
-                }
+                className='nav__list__item mobile'
                 onClick={() => this.handleClick('#whoami', pathname)}
               >
                 Who?

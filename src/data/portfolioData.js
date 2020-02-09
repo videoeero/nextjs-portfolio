@@ -21,7 +21,7 @@ export default [
     url: 'https://powau.com',
     summary: 'Webpage and webstore for Powau coffeehouses',
     description:
-      "Powau is a brand of coffeehouses located in three cities and they are known for their both delicous and healthy foods and overall personal business style. My role as their nerd guy started as a request to do minor fixes to old company website, when Powau was known as PureHero. But it escalated quickly as the company did a makeover for it's brand and this required a webpage to reflect their style. Company also wanted a possibility to sell their products on a webstore. My solution was to build their new website on top of MyCashflow, which made possible for me to do custom design for the front end but also an easy and fast CMS for the company to manage their sales on the webstore.",
+      "Powau is a brand of coffeehouses located in three cities and they are known for their both delicious and healthy foods and overall personal business style. My role as their nerd guy started as a request to do minor fixes to old company website, when Powau was known as PureHero. But it escalated quickly as the company did a makeover for it's brand and this required a webpage to reflect their style. Company also wanted a possibility to sell their products on a webstore. My solution was to build their new website on top of MyCashflow, which made possible for me to do custom design for the front end but also an easy and fast CMS for the company to manage their sales on the webstore.",
     image: 'img/powau.jpg',
     resources: [{ title: 'Website (Finnish)', url: 'https://powau.com' }]
   },

@@ -36,6 +36,10 @@
         }
       }
     }
+
+    @include respond(phone) {
+      box-shadow: none;
+    }
   }
 
   &__title {
@@ -213,7 +217,7 @@
     }
 
     @include respond(phone) {
-      margin: 1rem;
+      margin: 1rem auto;
       width: 100%;
       height: 18rem;
 
@@ -227,7 +231,7 @@
         }
 
         &__learninganalytics {
-          background-position: 0 25%;
+          background-position: 0 0;
         }
 
         &__ville {
