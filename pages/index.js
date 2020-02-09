@@ -59,7 +59,7 @@ class Home extends Component {
               />
               <img
                 src='/img/eero4.png'
-                alt='Fanboy Eero'
+                alt='Fanboy Eero with Marvel t-shirt'
                 className='me__img__profile'
                 id='eero4'
               />

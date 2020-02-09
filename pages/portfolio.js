@@ -80,10 +80,12 @@ class portfolio extends Component {
                     <p className='portfolio__paragraph'>{description}</p>
                     <div className='portfolio__fog'>&nbsp;</div>
                     <button
+                      title={'Show More'}
                       onClick={() => this.handleClick(index)}
                       className='portfolio__button'
                     >
                       <svg
+                        desc={'An arrow icon'}
                         className={
                           activeShowcase[index]
                             ? 'portfolio__button__icon active'

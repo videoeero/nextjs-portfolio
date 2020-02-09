@@ -76,7 +76,7 @@ class skillsPage extends Component {
         <div className='exp__main'>
           <section className='exp__section' id='#skills'>
             <div className='heading__wrapper'>
-              <SVGskill color={'blue'} />
+              <SVGskill color={'blue'} desc={'Picture of a fist'} />
 
               <h2 className='heading__h2'>Skills</h2>
             </div>
@@ -86,7 +86,10 @@ class skillsPage extends Component {
 
           <section className='exp__section' id='education'>
             <div className='heading__wrapper'>
-              <SVGeducation color={'red'} />
+              <SVGeducation
+                color={'red'}
+                desc={'Picture of an apple in top of a book'}
+              />
               <h2 className='heading__h2 heading__gradient'>Education</h2>
             </div>
 
@@ -96,7 +99,10 @@ class skillsPage extends Component {
           <section className='exp__section' name='experience' id='experience'>
             <div className='heading__borders__blue'>
               <div className='heading__wrapper'>
-                <SVGwork color={'blue'} />
+                <SVGwork
+                  color={'blue'}
+                  desc={'Picture of hand holding a wrench'}
+                />
                 <h2 className='heading__h2'>Work Experience</h2>
               </div>
             </div>
@@ -105,7 +111,10 @@ class skillsPage extends Component {
 
           <section className='exp__section' id='otherexperience'>
             <div className='heading__wrapper'>
-              <SVGexperience color={'red'} />
+              <SVGexperience
+                color={'red'}
+                desc={'Picture of a person surrounded by stars'}
+              />
               <h2 className='heading__h2'>Other Experience & Achievements</h2>
             </div>
 

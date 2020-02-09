@@ -66,6 +66,7 @@
 
   &__icon {
     @include flex__column;
+    flex-direction: column-reverse;
     width: 8rem;
     // height: 10rem;
     position: absolute;

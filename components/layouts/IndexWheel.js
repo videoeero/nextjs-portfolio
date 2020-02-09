@@ -20,50 +20,62 @@ export default function IndexWheel() {
     <>
       <div className='me__icons'>
         <Link href='#whoami'>
-          <a>
+          <a title='Who am I?'>
             <div className='me__icon' id='me__icon__aboutme'>
-              <SVGwhoami color={'green'} />
               <h3 className='me__icon__heading green'>Who am I?</h3>
+              <SVGwhoami
+                color={'green'}
+                desc={'Silhouette picture of a person'}
+              />
             </div>
           </a>
         </Link>
         <Link href='#principles'>
-          <a>
+          <a title='Design Principles'>
             <div className='me__icon' id='me__icon__principles'>
-              <SVGprinciples color={'red'} />
-              <h3 className='me__icon__heading red'>Design principles</h3>
+              <h3 className='me__icon__heading red'>Design Principles</h3>
+              <SVGprinciples
+                color={'red'}
+                desc={'Picture of three mountains with flag on the top of one'}
+              />
             </div>
           </a>
         </Link>
         <Link href='#contact'>
-          <a>
+          <a title='Contact Me'>
             <div className='me__icon' id='me__icon__contact'>
-              <SVGcontact color={'blue'} />
-              <h3 className='me__icon__heading blue'>Contact me</h3>
+              <h3 className='me__icon__heading blue'>Contact Me</h3>
+              <SVGcontact color={'blue'} desc={'Picture of speech bubbles'} />
             </div>
           </a>
         </Link>
         <Link href='/portfolio'>
-          <a>
+          <a title='Portfolio'>
             <div className='me__icon' id='me__icon__portfolio'>
-              <SVGportfolio color={'red'} />
               <h3 className='me__icon__heading red'>Portfolio</h3>
+              <SVGportfolio
+                color={'red'}
+                desc={'Picture of three mountains with flag on the top of one'}
+              />
             </div>
           </a>
         </Link>
         <Link href='/skills'>
-          <a>
+          <a title='Skills'>
             <div className='me__icon' id='me__icon__skills'>
-              <SVGskill color={'blue'} />
               <h3 className='me__icon__heading blue'>Skills</h3>
+              <SVGskill color={'blue'} desc={'Picture of a fist'} />
             </div>
           </a>
         </Link>
         <LinkWithHash href='/skills#experience'>
           <a onClick={() => handleClick('/skills#experience', '/skills')}>
             <div className='me__icon' id='me__icon__experience'>
-              <SVGexperience color={'green'} />
               <h3 className='me__icon__heading green'>Experience</h3>
+              <SVGexperience
+                color={'green'}
+                desc={'Picture of a person surrounded by stars'}
+              />
             </div>
           </a>
         </LinkWithHash>
@@ -73,7 +85,7 @@ export default function IndexWheel() {
           <img
             className='me__img'
             src='/img/eero.png'
-            alt='This is me - Eero'
+            alt='Picture of me - Eero'
           ></img>
         </a>
       </Link>

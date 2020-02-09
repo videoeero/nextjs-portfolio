@@ -59,13 +59,22 @@ export default class PrincipleItem extends Component {
         let svgIcon;
         let svgIconBack;
         if (id == 'meaningful') {
-          svgIcon = <SVGenjoy color={color} />;
+          svgIcon = (
+            <SVGenjoy color={color} desc={'Picture of happy pear fruit'} />
+          );
           svgIconBack = <SVGenjoy color={'light'} />;
         } else if (id == 'enjoy') {
-          svgIcon = <SVGpopcorn color={color} />;
+          svgIcon = (
+            <SVGpopcorn color={color} desc={'Picture of popcorn box'} />
+          );
           svgIconBack = <SVGpopcorn color={'light'} />;
         } else {
-          svgIcon = <SVGresponsive color={color} />;
+          svgIcon = (
+            <SVGresponsive
+              color={color}
+              desc={'Picture of mobile phone and computer monitor'}
+            />
+          );
           svgIconBack = <SVGresponsive color={'light'} />;
         }
 

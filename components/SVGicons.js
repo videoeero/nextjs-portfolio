@@ -1,9 +1,11 @@
 import React from 'react';
 import SVGGradient from './SvgGradient';
 
-export function SVGwhoami({ color }) {
+export function SVGwhoami({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34.3 46.5'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -21,9 +23,11 @@ export function SVGwhoami({ color }) {
   );
 }
 
-export function SVGprinciples({ color }) {
+export function SVGprinciples({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.1 94.9'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -33,9 +37,11 @@ export function SVGprinciples({ color }) {
   );
 }
 
-export function SVGcontact({ color }) {
+export function SVGcontact({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 79.2'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -53,9 +59,11 @@ export function SVGcontact({ color }) {
   );
 }
 
-export function SVGportfolio({ color }) {
+export function SVGportfolio({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 480'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -73,9 +81,11 @@ export function SVGportfolio({ color }) {
   );
 }
 
-export function SVGskill({ color }) {
+export function SVGskill({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88.6 89.6'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -85,9 +95,11 @@ export function SVGskill({ color }) {
   );
 }
 
-export function SVGexperience({ color }) {
+export function SVGexperience({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 90'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -97,7 +109,7 @@ export function SVGexperience({ color }) {
   );
 }
 
-export function SVGpopcorn({ color }) {
+export function SVGpopcorn({ color, title, desc }) {
   return (
     <svg
       version='1.1'
@@ -116,9 +128,11 @@ export function SVGpopcorn({ color }) {
   );
 }
 
-export function SVGresponsive({ color }) {
+export function SVGresponsive({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77.2 67.1'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -136,9 +150,11 @@ export function SVGresponsive({ color }) {
   );
 }
 
-export function SVGeducation({ color }) {
+export function SVGeducation({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -148,9 +164,11 @@ export function SVGeducation({ color }) {
   );
 }
 
-export function SVGwork({ color }) {
+export function SVGwork({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 76.7 75.8'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -160,9 +178,11 @@ export function SVGwork({ color }) {
   );
 }
 
-export function SVGstars({ color }) {
+export function SVGstars({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77 77'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
@@ -176,9 +196,11 @@ export function SVGstars({ color }) {
   );
 }
 
-export function SVGenjoy({ color }) {
+export function SVGenjoy({ color, title, desc }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 385.5 510'>
+      {title ? <title>{title}</title> : ''}
+      {desc ? <desc>{desc}</desc> : ''}
       <SVGGradient color={color} />
       <path
         className={`icon-bg__${color}`}
