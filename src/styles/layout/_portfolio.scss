@@ -1,11 +1,17 @@
 .portfolio {
   @include flex__column;
   width: 100vw;
+  padding-top: 0;
   &__item {
+    &:first-of-type {
+      padding-top: 6rem;
+    }
+
     @include flex__column;
     padding: 3rem 0;
     width: 100vw;
-
+    box-shadow: 0px 0px 4px rgba($color-gunmetal, 0.4);
+    // background-color: $color-platinum;
     &:nth-of-type(2n) {
       background-color: #eeeeee;
       & .portfolio {
@@ -150,8 +156,8 @@
     padding: 1rem;
     margin: 0;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -1rem;
+    top: -1rem;
     width: 7rem;
     height: 7rem;
 
@@ -200,6 +206,7 @@
     background-size: cover;
     background-position: center;
     margin: 1rem 2rem 1rem 0;
+    box-shadow: 0px 2px 5px rgba($color-black, 0.6);
 
     &:hover {
       filter: brightness(1.1) contrast(1.5);
@@ -210,12 +217,26 @@
       width: 100%;
       height: 18rem;
 
-      &#hybridispeksi_bg {
-        background-position: 0 6%;
-      }
+      &#img {
+        &__hybridispeksi {
+          background-position: 0 6%;
+        }
 
-      &#atkytp2018_bg {
-        background-position: 0 13%;
+        &__atkytp2018 {
+          background-position: 0 10%;
+        }
+
+        &__learninganalytics {
+          background-position: 0 25%;
+        }
+
+        &__ville {
+          background-position: 0 46%;
+        }
+
+        &__natours {
+          background-position: 0 50%;
+        }
       }
     }
   }

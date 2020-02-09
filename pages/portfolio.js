@@ -44,7 +44,7 @@ class portfolio extends Component {
             <div className='portfolio__wrapper'>
               <a
                 className='portfolio__image'
-                id={`${slug}_bg`}
+                id={`img__${slug}`}
                 href={url}
                 target='_blank'
                 rel='noopener'
