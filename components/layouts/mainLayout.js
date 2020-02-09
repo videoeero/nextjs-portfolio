@@ -5,6 +5,7 @@ import Footer from '../includes/Footer';
 import Head from 'next/head';
 import { PageTransition } from 'next-page-transitions';
 import { withRouter } from 'next/router';
+import SVGGradient from '../SvgGradient';
 
 class MainLayout extends Component {
   render() {
@@ -66,11 +67,22 @@ class MainLayout extends Component {
         <div className='mainLayout_container'>
           <Header />
           <Navigation />
+
           <PageTransition timeout={300} classNames='page-transition'>
             {React.cloneElement(children, {
               key: router.pathname
             })}
           </PageTransition>
+          <svg
+            className='svgGradients'
+            // style='width:0;height:0;position:absolute;'
+            aria-hidden='true'
+            focusable='false'
+          >
+            <SVGGradient color={'red'} />
+            <SVGGradient color={'green'} />
+            <SVGGradient color={'blue'} />
+          </svg>
           <Footer />
         </div>
       </>
