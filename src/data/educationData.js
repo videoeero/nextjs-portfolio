@@ -1,7 +1,7 @@
 export default [
   {
     year: '2017',
-    employer: 'MScs in Computer Science',
+    employer: 'MSc in Computer Science',
     title: 'University of Turku',
     description:
       "Didactic information technology as a major subject. Bachelor's degree also included 60 study points of mathematics."
