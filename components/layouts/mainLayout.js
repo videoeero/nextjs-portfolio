@@ -14,17 +14,6 @@ class MainLayout extends Component {
     return (
       <>
         <Head>
-          {/* Global site tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src='https://www.googletagmanager.com/gtag/js?id=UA-158065200-1'
-          ></script>
-          <script>
-            window.dataLayer = window.dataLayer || []; function gtag()
-            {dataLayer.push(arguments)}
-            gtag('js', new Date()); gtag('config', 'UA-158065200-1');
-          </script>
-
           <title>Find Eero</title>
           <meta name='keywords' content='web,developer,portfolio,cv' />
           <meta property='og:title' content='Eero Suvanto' />
