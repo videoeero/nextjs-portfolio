@@ -16,7 +16,7 @@ class MainLayout extends Component {
         <Head>
           <title>Find Eero</title>
           <meta name='keywords' content='web,developer,portfolio,cv' />
-          <meta property='og:title' content='Eero Suvanto' />
+          <meta property='og:title' content='Find Eero' />
           <meta property='og:locale' content='en_US' />
           <meta property='og:type' content='website' />
           <meta
