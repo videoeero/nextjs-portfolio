@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import { withRouter } from 'next/router';
 import LinkWithHash from '../LinkWithHash';
-import checkUrl from '../checkUrl';
+import checkUrl from '../../helpers/checkUrl';
 
 // import Link from '../ActiveLink';
 

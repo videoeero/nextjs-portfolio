@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import LinkWithHash from '../LinkWithHash';
-import checkUrl from '../checkUrl';
+import checkUrl from '../../helpers/checkUrl';
 import {
   SVGwhoami,
   SVGprinciples,
