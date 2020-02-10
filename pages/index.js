@@ -31,7 +31,7 @@ class Home extends Component {
           <div className='me__wrapper__right'>
             <h2 className='heading__h2'>Hey You!</h2>
             <p className='me__paragraph'>
-              And thank your for your interest in my website. I hope you find
+              And thank you for your interest in my website. I hope you find
               what you are looking for!
             </p>
             <p className='paragraph__italic'>Best regards,</p>
