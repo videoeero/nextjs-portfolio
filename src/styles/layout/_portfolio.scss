@@ -2,9 +2,14 @@
   @include flex__column;
   width: 100vw;
   padding-top: 0;
+  padding-bottom: 0;
   &__item {
     &:first-of-type {
       padding-top: 6rem;
+    }
+
+    &:last-of-type {
+      padding-bottom: 6rem;
     }
 
     @include flex__column;
