@@ -41,7 +41,7 @@ export default class PrincipleItem extends Component {
         summary: 'SEO, accessibility, relevance',
         color: 'green',
         text:
-          "Making search en\u00ADgines hap\u00ADpy like this pear here isn't that hard, but acces\u00ADsi\u00ADble and rel\u00ADe\u00ADvant con\u00ADtent for a hu\u00ADman is an\u00ADot\u00ADher thing. This has to be kept in mind from the very be\u00ADgin\u00ADning of development process."
+          "Making search en\u00ADgines hap\u00ADpy like this pear here isn't that hard, but acces\u00ADsi\u00ADble and rel\u00ADe\u00ADvant con\u00ADtent for a hu\u00ADman is an an\u00ADot\u00ADher thing. This has to be kept in mind from the very be\u00ADgin\u00ADning of the development process."
       },
       {
         id: 'responsive',

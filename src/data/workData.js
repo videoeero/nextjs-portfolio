@@ -16,7 +16,7 @@ export default [
   {
     year: '2014 –',
     employer: 'University of Turku',
-    title: 'Web Developer, Research Coordinator (2017 –)',
+    title: 'Web Developer, Research Coordinator (2017 – )',
     title2: 'Designer, Research Assistant (2014 – 2017)',
     description:
       "Working at The Centre for Learning Analytics in faculty of Faculty of Science and Engineering. Developing and designing an analytics based learning platform, coordinating projects and assisting in department's education."
