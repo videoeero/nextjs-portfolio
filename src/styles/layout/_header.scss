@@ -34,7 +34,7 @@
 
     &.current {
       z-index: 9;
-      animation: hideBgImage 4s ease 0s 1 forwards;
+      animation: hideBgImage 2s ease 0s 1 forwards;
     }
   }
 
@@ -45,15 +45,15 @@
     align-items: center;
     max-width: 90vw;
     width: 90vw;
-    transition: opacity 2s;
+    transition: opacity 1s;
 
     &.active {
-      transition: opacity 2s ease-out;
+      transition: opacity 1s ease-out;
       opacity: 1;
     }
 
     &.hidden {
-      transition: opacity 2s ease-in;
+      transition: opacity 1s ease-in;
       opacity: 0;
     }
 

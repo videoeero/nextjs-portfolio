@@ -28,7 +28,8 @@ button {
 html,
 body {
   overflow-x: hidden;
-  background-color: $color-platinum;
+  // background-color: $color-platinum;
+  background-color: $color-lighter;
   font-family: 'Ubuntu', sans-serif;
   scroll-behavior: smooth;
   position: relative;

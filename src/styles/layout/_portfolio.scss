@@ -16,26 +16,26 @@
     padding: 3rem 0;
     width: 100vw;
     box-shadow: 0px 0px 4px rgba($color-gunmetal, 0.4);
-    // background-color: $color-platinum;
+    background-color: $color-lighter;
     &:nth-of-type(2n) {
-      background-color: #eeeeee;
+      background-color: #f3f3f3;
       & .portfolio {
         &__paragraph {
-          background-color: #eeeeee;
+          background-color: #f3f3f3;
         }
 
         &__fog {
           background-image: linear-gradient(
             to bottom,
-            rgba(#eeeeee, 0),
-            rgba(#eeeeee, 1) 100%
+            rgba(#f3f3f3, 0),
+            rgba(#f3f3f3, 1) 100%
           );
 
           @include respond(phone) {
             background-image: linear-gradient(
               to bottom,
-              rgba(#eeeeee, 0),
-              rgba(#eeeeee, 1) 60%
+              rgba(#f3f3f3, 0),
+              rgba(#f3f3f3, 1) 60%
             );
           }
         }
@@ -117,7 +117,7 @@
 
   &__paragraph {
     text-align: justify;
-    background-color: $color-platinum;
+    background-color: $color-lighter;
   }
 
   &__fog {
@@ -128,16 +128,16 @@
     transition: all 0.3s;
     background-image: linear-gradient(
       to bottom,
-      rgba($color-platinum, 0),
-      rgba($color-platinum, 1) 100%
+      rgba($color-lighter, 0),
+      rgba($color-lighter, 1) 100%
     );
 
     @include respond(phone) {
       height: 6rem;
       background-image: linear-gradient(
         to bottom,
-        rgba($color-platinum, 0),
-        rgba($color-platinum, 1) 60%
+        rgba($color-lighter, 0),
+        rgba($color-lighter, 1) 60%
       );
     }
   }

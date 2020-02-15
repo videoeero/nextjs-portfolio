@@ -11,6 +11,7 @@ $color-cyan: #01baef;
 // $color-green-2: #2afadf;
 $color-green: #28e4ab;
 $color-green-2: #17aa61;
+$color-green-3: #24ce9b;
 $color-platinum: #e9e7ee;
 
 // $color-green: #bbdbb4;
@@ -33,5 +34,6 @@ $color-white: #ffffff;
 $default-font-size: 1.6rem;
 $gradient-red: linear-gradient(to right, $color-red, $color-orange);
 $gradient-green: linear-gradient(to left, $color-green-2, $color-green);
+$gradient-green-2: linear-gradient(to left, $color-green-2, $color-green-3);
 $gradient-blue: linear-gradient(to left, $color-blue, $color-cyan);
 $gradient-light: linear-gradient(to left, $color-lighter, $color-platinum);

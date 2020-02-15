@@ -9,7 +9,8 @@
       padding: 0.5rem 1rem;
       margin: 0;
       border-radius: 3px;
-      background-color: #eeeeee;
+      // background-color: #eeeeee;
+      background-color: $color-white;
       transition: all 0.4s;
     }
 
@@ -88,7 +89,8 @@
       border-radius: 5px;
       width: calc(100% - 6px);
       height: calc(100% - 6px);
-      background-color: #eeeeee;
+      // background-color: #eeeeee;
+      background-color: $color-white;
     }
 
     &__front {
@@ -117,6 +119,10 @@
 
       &.rotate {
         transform: rotateY(0deg);
+      }
+
+      &.green-bg {
+        background-image: $gradient-green-2;
       }
     }
   }
