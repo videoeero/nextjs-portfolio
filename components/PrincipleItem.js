@@ -33,7 +33,7 @@ export default class PrincipleItem extends Component {
         summary: 'No lag + aesthetics = happy user',
         color: 'red',
         text:
-          "The manda\u00ADtory stuff: Fast load times, op\u00ADti\u00ADmized images etc. as\u00ADsets, lag free in\u00ADter\u00ADac\u00ADtion. But op\u00ADti\u00ADmizing doesn't mean skip\u00ADping in\u00ADtu\u00ADitive and fun user ex\u00ADpe\u00ADri\u00ADence. Balanc\u00ADing be\u00ADtween fan\u00ADcy ef\u00ADfects and load times is the cru\u00ADcial thing."
+          "The manda\u00ADtory stuff: Fast load times, op\u00ADti\u00ADmized images and other as\u00ADsets, lag free in\u00ADter\u00ADac\u00ADtion. But op\u00ADti\u00ADmizing doesn't mean skip\u00ADping in\u00ADtu\u00ADitive and fun user ex\u00ADpe\u00ADri\u00ADence. Balanc\u00ADing be\u00ADtween fan\u00ADcy ef\u00ADfects and load times is the cru\u00ADcial thing."
       },
       {
         id: 'meaningful',
@@ -46,7 +46,7 @@ export default class PrincipleItem extends Component {
       {
         id: 'responsive',
         title: ['Think', 'Responsively'],
-        summary: "55' mobile phone would be impractical",
+        summary: "A 55'' mobile phone would be impractical",
         color: 'blue',
         text:
           "Mobile de\u00ADvices with var\u00ADi\u00ADous screen types and sizes are not going any\u00ADwhere. Sure it wouldn't hurt to use phones little less, but frus\u00ADtrat\u00ADing mo\u00ADbile ex\u00ADpe\u00ADri\u00ADence isn't solution for that. Making the ex\u00ADpe\u00ADri\u00ADence smooth on every de\u00ADvice saves nerves!"

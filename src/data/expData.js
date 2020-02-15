@@ -4,7 +4,7 @@ export default [
     employer: 'HybridiSpeksi',
     title: 'Various roles in production',
     description:
-      "Participating in annual production of HybridiSpeksi (theatre production of students from Faculty of Science and Engineering in University of Turku). I've been an active member especially in teams for website, videos, graphics, screenwriting, technical stuff, general production and three times even as a performer, both acting and dancing!"
+      "Participating in annual production of HybridiSpeksi (theatre production of students from Faculty of Science and Engineering in University of Turku). I've been active in creating websites, videos, and graphics as well as participating in screenwriting, general production, and the technical stuff that comes with theatre productions. I've even acted and danced in three different productions!"
   },
   {
     year: '2018 – 2019',

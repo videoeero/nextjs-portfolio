@@ -145,5 +145,13 @@
     @include respond(phone) {
       line-height: 3rem;
     }
+
+    &::after {
+      content: '.';
+      display: inline-block;
+      color: $color-platinum;
+      width: 1rem;
+      height: 1rem;
+    }
   }
 }

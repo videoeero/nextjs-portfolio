@@ -72,10 +72,10 @@ class Home extends Component {
             </div>
 
             <p className='paragraph'>
-              So I'm Eero, living in Turku, the original capital of Finland. I'm
-              a computer science guy with infinite eagerness to learn more. I'm
-              a mixture of your friendly neighborhood developer, a designer
-              pursuing to create both functional and nice to look at end results
+              So I'm Eero from Turku, the original capital of Finland. I'm a
+              computer science guy with infinite eagerness to learn more. I'm a
+              mixture of your friendly neighborhood developer, a designer
+              pursuing to create both functional and good looking end results
               and a teacher, who does his best to share good practices among
               co-workers and learners.
             </p>

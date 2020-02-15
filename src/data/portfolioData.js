@@ -5,7 +5,7 @@ export default [
     url: 'https://hybridispeksi.fi',
     summary: 'Webpage and marketing materials for HybridiSpeksi',
     description:
-      "HybridiSpeksi is a theatre production of students from Faculty of Science and Engineering in University of Turku. HybridiSpeksi is known for it's high quality in marketing materials, even though budget is non-existent. I've been playing big part in designing and building the current website and also in previous years I've been an active member and also responsible for videos and graphic materials. Therefore link below for one of my favorite video projects.",
+      "HybridiSpeksi is a theatre production of students from Faculty of Science and Engineering in University of Turku. HybridiSpeksi is known for it's high quality in marketing materials, even though budget is non-existent. I've been playing big part in designing and building the current website and also in previous years I've been an active member and also responsible for videos and graphic materials. Check out the link above for one of my favorite video projects.",
     image: 'img/hybridispeksi.jpg',
     resources: [
       { title: 'Website (Finnish)', url: 'https://hybridispeksi.fi' },
@@ -32,7 +32,7 @@ export default [
     summary:
       'Webpage and marketing materials for ATK-YTP 2018 IT-student seminar event',
     description:
-      "ATK-YTP is an annual CS students' seminar event and Turku was the host in 2018. Our pre-event materials were so successful that we broke the records of students attending the event. And the feedback afterwards surprisingly was, that participants wished that Turku, the original capital of Finland, would host ATK-YTP always. ",
+      "ATK-YTP is an annual CS students' seminar event and Turku was the host in 2018. Our pre-event materials were so successful that we broke the records of students attending the event. Afterwards, participants wished that Turku - the original capital of Finland - would always host ATK-YTP from now on. ",
     image: 'img/atk-ytp.jpg',
     resources: [
       { title: 'Website (Finnish)', url: 'https://atk-ytp.org' },
@@ -100,7 +100,7 @@ export default [
     url: 'https://natours-videoeero.herokuapp.com/',
     summary: 'Project to practice NodeJS, MongoDB and Pug templates',
     description:
-      'Natours is a practice project from an Udemy course. The course quite thoroughly teaches good practices in creating RESTful API and an NodeJS/Express application with safe user and database management. Even though my interests are more on a front-end side of things, I wanted to understand back-end development better and this was a nice way to learn that, as the end result is visually nice to look at.',
+      'Natours is a practice project from a Udemy course. The course quite thoroughly teaches good practices in creating RESTful API and an NodeJS/Express application with safe user and database management. Even though my interests are more on a front-end side of things, I wanted to understand back-end development better and this was a nice way to learn that, as the end result is visually nice to look at.',
     image: 'img/natours.jpg',
     resources: [
       {
