@@ -21,15 +21,15 @@
   "homepage": "https://github.com/videoeero/nextjs-portfolio#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "^9.7.4",
-    "next": "^9.2.1",
+    "autoprefixer": "^9.8.5",
+    "next": "^9.4.4",
     "next-page-transitions": "^1.0.0-beta.2",
-    "node-sass": "^4.13.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-transition-group": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-transition-group": "^4.4.1",
     "react-uuid": "^1.0.2",
-    "sass": "^1.25.1-test.1"
+    "sass": "^1.26.10"
   },
   "browserslist": [
     "last 5 versions",
