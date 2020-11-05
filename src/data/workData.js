@@ -1,5 +1,12 @@
 export default [
   {
+    year: '2020 – ',
+    employer: 'Telia Finland',
+    title: 'Software Engineer',
+    description:
+      "Working in Telia's Design System team to deliver reliable and easy-to-use component library for the product teams. Team's role is also to provide good practices and documentation for the product teams to create accessible and well designed user experiences.",
+  },
+  {
     year: '2014 – 2020',
     employer: 'University of Turku',
     title: 'Web Developer, Research Coordinator (2017 – 2020)',
@@ -8,7 +15,7 @@ export default [
       "Working at The Centre for Learning Analytics in faculty of Faculty of Science and Engineering. Developing and designing an analytics based learning platform, coordinating projects and assisting in department's education.",
   },
   {
-    year: '2018 –',
+    year: '2018 – 2020',
     employer: 'Eduten Oy',
     title: 'Consultant',
     description:
