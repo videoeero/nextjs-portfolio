@@ -17,6 +17,11 @@ a:visited {
   font-size: $default-font-size;
 }
 
+a:focus,
+button:focus {
+  outline: 3px solid $color-cyan;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -30,7 +35,7 @@ body {
   overflow-x: hidden;
   // background-color: $color-platinum;
   background-color: $color-lighter;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
   position: relative;
 }
