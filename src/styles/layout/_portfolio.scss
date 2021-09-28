@@ -117,6 +117,7 @@
 
   &__paragraph {
     text-align: justify;
+    margin-right: 1rem;
     background-color: $color-lighter;
   }
 
@@ -165,10 +166,16 @@
     padding: 1rem;
     margin: 0;
     position: absolute;
-    right: -1rem;
-    top: -1rem;
-    width: 7rem;
-    height: 7rem;
+    right: 0rem;
+    top: 0rem;
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid transparent;
+
+    &:focus {
+      outline: none;
+      border: 3px solid $color-cyan;
+    }
 
     @include respond(phone) {
       right: 50%;

@@ -22,7 +22,7 @@
     position: relative;
 
     &__item {
-      padding: 1rem;
+      padding: 1rem 1rem 0 1rem;
       margin-top: 1rem;
       color: $color-light !important;
       transition: all 0.3s;
@@ -30,7 +30,7 @@
       text-align: center;
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         margin: 0.5rem auto;
         height: 2px;
