@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
-import IndexWheel from '../components/layouts/IndexWheel';
-import ButtonGradient from '../components/Button';
-import PrincipleItem from '../components/PrincipleItem';
-import Head from 'next/head';
+import React, { Component } from "react";
+import Link from "next/link";
+import IndexWheel from "../components/layouts/IndexWheel";
+import ButtonGradient from "../components/Button";
+import PrincipleItem from "../components/PrincipleItem";
+import Head from "next/head";
 
 class Home extends Component {
   constructor(props) {
@@ -14,54 +14,54 @@ class Home extends Component {
     return (
       <>
         <Head>
-          <meta property='og:url' content='https://findeero.now.sh' />
+          <meta property="og:url" content="https://findeero.now.sh" />
           <meta
-            property='og:description'
-            content='Portfolio / CV website of Eero Suvanto, Web & Edutech Developer'
+            property="og:description"
+            content="Portfolio / CV website of Eero Suvanto, Web & Edutech Developer"
           />
           <meta
-            name='description'
-            content='Portfolio / CV website of Eero Suvanto, Web & Edutech Developer'
+            name="description"
+            content="Portfolio / CV website of Eero Suvanto, Web & Edutech Developer"
           />
         </Head>
-        <section className='me' id='me'>
-          <div className='me__wrapper__left'>
+        <section className="me" id="me">
+          <div className="me__wrapper__left">
             <IndexWheel />
           </div>
-          <div className='me__wrapper__right'>
-            <h2 className='heading__h2'>Hey You!</h2>
-            <p className='me__paragraph'>
+          <div className="me__wrapper__right">
+            <h2 className="heading__h2">Hey You!</h2>
+            <p className="me__paragraph">
               And thank you for your interest in my website. I hope you find
               what you are looking for!
             </p>
-            <p className='paragraph__italic'>Best regards,</p>
-            <p className='paragraph__italic'>Eero</p>
+            <p className="paragraph__italic">Best regards,</p>
+            <p className="paragraph__italic">Eero</p>
           </div>
         </section>
-        <section className='about' name='whoami' id='whoami'>
-          <h2 className='heading__h2'>Who am I?</h2>
-          <p className='paragraph paragraph__italic'>
+        <section className="about" name="whoami" id="whoami">
+          <h2 className="heading__h2">Who am I?</h2>
+          <p className="paragraph paragraph__italic">
             Half Coder, half Designer, extended from Teacher class component
           </p>
-          <div className='me__wrapper'>
-            <div className='me__img__profile__wrapper'>
+          <div className="me__wrapper">
+            <div className="me__img__profile__wrapper">
               <img
-                src='/img/eero2.webp'
-                alt='Happy Eero'
-                className='me__img__profile'
-                id='eero2'
+                src="/img/eero2.webp"
+                alt="Happy Eero"
+                className="me__img__profile"
+                id="eero2"
               />
               <img
-                src='/img/eero3.webp'
-                alt='Adventure Eero'
-                className='me__img__profile'
-                id='eero3'
+                src="/img/eero3.webp"
+                alt="Adventure Eero"
+                className="me__img__profile"
+                id="eero3"
               />
               <img
-                src='/img/eero4.webp'
-                alt='Fanboy Eero with Marvel t-shirt'
-                className='me__img__profile'
-                id='eero4'
+                src="/img/eero4.webp"
+                alt="Fanboy Eero with Marvel t-shirt"
+                className="me__img__profile"
+                id="eero4"
               />
               {/* <img
                 src='/img/eero_mobile.png'
@@ -71,15 +71,15 @@ class Home extends Component {
               /> */}
             </div>
 
-            <p className='paragraph'>
-              So I'm Eero, currently living in Helsinki, the capital of Finland. I'm a
-              computer science guy with infinite eagerness to learn more. I'm a
-              mixture of your friendly neighborhood developer, a designer
+            <p className="paragraph">
+              So I'm Eero, currently living in Helsinki, the capital of Finland.
+              I'm a computer science guy with infinite eagerness to learn more.
+              I'm a mixture of your friendly neighborhood developer, a designer
               pursuing to create both functional and good looking end results
               and a teacher, who does his best to share good practices among
               co-workers and learners.
             </p>
-            <p className='paragraph'>
+            <p className="paragraph">
               What else I do? Well being a fan boy of Star Wars, Marvel, DC,
               Monty Python... (list goes on) takes it's time. As a contrast to
               smashing keyboard, I'll try to smash weights in the gym (gently
@@ -88,72 +88,72 @@ class Home extends Component {
               imagination. Disclaimer: Consoles are cool but there can be only
               one PC master race.
             </p>
-            <p className='paragraph'>
+            <p className="paragraph">
               For more details about things I have done so far, check out
-              <Link href='/skills'>
-                <a className='paragraph__link'> Skills & Experience</a>
-              </Link>{' '}
+              <Link href="/skills">
+                <a className="paragraph__link"> Skills & Experience</a>
+              </Link>{" "}
               page or
-              <Link href='/skills'>
-                <a className='paragraph__link'> Portfolio</a>
-              </Link>{' '}
+              <Link href="/portfolio">
+                <a className="paragraph__link"> Portfolio</a>
+              </Link>{" "}
               for some of my favorite projects. Please feel free to
-              <a href='#contact' className='paragraph__link'>
+              <a href="#contact" className="paragraph__link">
                 &nbsp;contact me
               </a>
               , if you are interested in working with me!
             </p>
           </div>
-          <div className='me__buttons'>
-            <Link href='/skills'>
-              <a className='button'>
-                <ButtonGradient title={'Skills & Experience'} />
+          <div className="me__buttons">
+            <Link href="/skills">
+              <a className="button">
+                <ButtonGradient title={"Skills & Experience"} />
               </a>
             </Link>
-            <Link href='/portfolio'>
-              <a className='button'>
-                <ButtonGradient title={'Portfolio'} />
+            <Link href="/portfolio">
+              <a className="button">
+                <ButtonGradient title={"Portfolio"} />
               </a>
             </Link>
-            <Link href='#contact'>
-              <a className='button'>
-                <ButtonGradient title={'Contact me'} />
+            <Link href="#contact">
+              <a className="button">
+                <ButtonGradient title={"Contact me"} />
               </a>
             </Link>
           </div>
         </section>
-        <section className='about' id='principles'>
-          <h2 className='heading__h2'>My Design Principles</h2>
-          <p className='paragraph paragraph__italic'>
+        <section className="about" id="principles">
+          <h2 className="heading__h2">My Design Principles</h2>
+          <p className="paragraph paragraph__italic">
             There's usually more than just one superb solution, but avoiding the
             bad ones isn't rocket science.
           </p>
 
-          <div className='principle__wrapper'>
+          <div className="principle__wrapper">
             <PrincipleItem />
           </div>
         </section>
-        <section name='contact' className='about contact' id='contact'>
-          <h2 className='heading__h2'>Contact me</h2>
-          <p className='paragraph paragraph__centered'>
+        <section name="contact" className="about contact" id="contact">
+          <h2 className="heading__h2">Contact me</h2>
+          <p className="paragraph paragraph__centered">
             To reach me out most easily, you can send me a message on
             <a
-              href='https://www.linkedin.com/in/eero-suvanto-739362147/'
-              target='_blank'
-              rel='noopener'
-              className='paragraph__link'
+              href="https://www.linkedin.com/in/eero-suvanto-739362147/"
+              target="_blank"
+              rel="noopener"
+              className="paragraph__link"
             >
               &nbsp;LinkedIn.
-            </a>{' '}
+            </a>{" "}
             For alternatives, check out the footer in the end of each page.
           </p>
           <a
-            href='https://www.linkedin.com/in/eero-suvanto-739362147/'
-            target='_blank'
-            rel='noopener'
-            className='button'
+            href="https://www.linkedin.com/in/eero-suvanto-739362147/"
+            target="_blank"
+            rel="noopener"
+            className="button"
           >
-            <ButtonGradient title={'LinkedIn'} />
+            <ButtonGradient title={"LinkedIn"} />
           </a>
         </section>
       </>
